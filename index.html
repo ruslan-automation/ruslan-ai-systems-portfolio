@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ruslan Zaynullin — AI-инженер автономных бизнес-систем</title>
+<meta name="description" content="AI-инженер. n8n, Python, LLM, RAG, голосовые агенты. Связываю формы, голос, CRM и календарь в один маршрут от заявки до записи в сделке." />
+<meta name="theme-color" content="#F5F5F5" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="icon" type="image/svg+xml" href="assets/img/asterisk.svg" />
+</head>
+<body>
+<div class="intro-overlay" aria-hidden="true">
+  <div class="intro-brand">Ruslan Zaynullin</div>
+</div>
+
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <div class="nav-spacer" aria-hidden="true"></div>
+    <nav class="nav-anchors" aria-label="Основная навигация">
+      <a href="#works">Работы</a>
+      <a href="#about">О себе</a>
+      <a href="#services">Услуги</a>
+      <a href="#contact">Контакт</a>
+    </nav>
+    <div class="nav-spacer" aria-hidden="true"></div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO ===================================================== -->
+<section id="hero" class="hero">
+  <div class="container">
+    <div class="hero-typo" role="heading" aria-level="1">
+
+      <div class="hero-mask hero-mask--name" style="--depth:-.52">
+        <div class="hero-mask-inner" style="--i:0">
+          <span class="hero-nut" aria-hidden="true"></span>Я Руслан Зайнуллин,
+        </div>
+      </div>
+
+      <aside class="hero-aside reveal" data-reveal-eager style="--i:6">
+        <p class="hero-lead">Собираю заявки, звонки, CRM и календарь в один маршрут: клиент доходит до записи, менеджер получает готовую сделку, а ручные действия сокращаются на 40–70%. За 2 недели показываю рабочий сценарий на n8n, Python и LLM. Связь в <a class="hero-link" href="https://t.me/RuslanFZ" target="_blank" rel="noopener">Telegram.</a></p>
+      </aside>
+
+      <div class="hero-mask hero-mask--role hero-mask--right" style="--depth:.18">
+        <div class="hero-mask-inner" style="--i:1">AI-инженер</div>
+      </div>
+
+      <div class="hero-mask hero-mask--system" style="--depth:.58">
+        <div class="hero-mask-inner" style="--i:2">автономных бизнес-систем.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WORKS ==================================================== -->
+<section id="works" class="works">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2 class="section-title">Избранные работы</h2>
+    </div>
+  </div>
+
+  <div class="rail-wrap" data-rail>
+    <ol class="rail" tabindex="0" aria-label="Лента кейсов">
+      <li class="card reveal" style="--i:0">
+        <button class="card-trigger" type="button" data-case="voiceSales" aria-label="Открыть кейс: Голосовой ИИ-администратор для клиники">
+          <figure class="card-media">
+            <img src="assets/posters/voice.webp" alt="" loading="lazy" decoding="async" />
+          </figure>
+          <div class="card-body" data-label="Голосовой ИИ, запись">
+            <h3 class="card-title">Голосовой ИИ-администратор для клиники</h3>
+            <p class="card-text">Звонок прямо с сайта, агент уточняет услугу и время, проверяет слоты и доводит сценарий до записи в CRM.</p>
+            <ul class="chips" aria-label="Стек">
+              <li>Vapi</li>
+              <li>OpenAI</li>
+              <li>FastAPI</li>
+            </ul>
+          </div>
+        </button>
+      </li>
+
+      <li class="card reveal" style="--i:1">
+        <button class="card-trigger" type="button" data-case="bitrixDispatcher" aria-label="Открыть кейс: CRM-автоматизация Bitrix24">
+          <figure class="card-media">
+            <img src="assets/posters/crm.webp" alt="" loading="lazy" decoding="async" />
+          </figure>
+          <div class="card-body" data-label="CRM, оплата, запись">
+            <h3 class="card-title">CRM-автоматизация Bitrix24 + YCLIENTS + ЮKassa</h3>
+            <p class="card-text">Сквозной маршрут: сайт → онлайн-запись → предоплата → сделка в Bitrix24 → уведомление менеджеру.</p>
+            <ul class="chips" aria-label="Стек">
+              <li>Bitrix24</li>
+              <li>YCLIENTS</li>
+              <li>ЮKassa</li>
+            </ul>
+          </div>
+        </button>
+      </li>
+
+      <li class="card reveal" style="--i:2">
+        <button class="card-trigger" type="button" data-case="miniAppCopilot" aria-label="Открыть кейс: База знаний в Telegram Mini App">
+          <figure class="card-media">
+            <img src="assets/posters/miniapp.webp" alt="" loading="lazy" decoding="async" />
+          </figure>
+          <div class="card-body" data-label="База знаний, Mini App">
+            <h3 class="card-title">База знаний для команды в Telegram Mini App</h3>
+            <p class="card-text">Сотрудник задаёт вопрос текстом или голосом — система ищет ответ в базе, показывает источники и медиа.</p>
+            <ul class="chips" aria-label="Стек">
+              <li>React</li>
+              <li>RAG</li>
+              <li>Qdrant</li>
+            </ul>
+          </div>
+        </button>
+      </li>
+
+      <li class="card reveal" style="--i:3">
+        <button class="card-trigger" type="button" data-case="kitchenSalesBot" aria-label="Открыть кейс: Telegram-бот для заявок на кухни">
+          <figure class="card-media">
+            <img src="assets/posters/kitchen.webp" alt="" loading="lazy" decoding="async" />
+          </figure>
+          <div class="card-body" data-label="Telegram, квиз, лиды">
+            <h3 class="card-title">Telegram-бот для заявок на кухни</h3>
+            <p class="card-text">Бот ведёт по короткому квизу, собирает параметры кухни, сохраняет лид и передаёт менеджеру в работу.</p>
+            <ul class="chips" aria-label="Стек">
+              <li>n8n</li>
+              <li>Telegram</li>
+              <li>Sheets</li>
+            </ul>
+          </div>
+        </button>
+      </li>
+
+      <li class="card reveal" style="--i:4">
+        <button class="card-trigger" type="button" data-case="ragKnowledge" aria-label="Открыть кейс: Корпоративная база знаний">
+          <figure class="card-media">
+            <img src="assets/posters/rag.webp" alt="" loading="lazy" decoding="async" />
+          </figure>
+          <div class="card-body" data-label="RAG, документы, источники">
+            <h3 class="card-title">Корпоративная ИИ-база знаний</h3>
+            <p class="card-text">Поиск ответов в документах с привязкой к источникам для сотрудников, регламентов и внутренних процессов.</p>
+            <ul class="chips" aria-label="Стек">
+              <li>Pinecone</li>
+              <li>embeddings</li>
+              <li>n8n</li>
+            </ul>
+          </div>
+        </button>
+      </li>
+
+      <li class="card reveal" style="--i:5">
+        <button class="card-trigger" type="button" data-case="leadRadarSystem" aria-label="Открыть кейс: Авто-поиск лидов">
+          <figure class="card-media">
+            <img src="assets/posters/leads.webp" alt="" loading="lazy" decoding="async" />
+          </figure>
+          <div class="card-body" data-label="ИИ-скоринг, поиск лидов">
+            <h3 class="card-title">Авто-поиск лидов с ИИ-скорингом</h3>
+            <p class="card-text">Мониторит hh.ru, FL.ru, Habr Career и Telegram, оценивает лиды и присылает лучшие в работу с reasoning.</p>
+            <ul class="chips" aria-label="Стек">
+              <li>n8n</li>
+              <li>OpenRouter</li>
+              <li>Sheets</li>
+            </ul>
+          </div>
+        </button>
+      </li>
+
+      <li class="card reveal" style="--i:6">
+        <button class="card-trigger" type="button" data-case="designBot" aria-label="Открыть кейс: ИИ-консультант для мебельной студии">
+          <figure class="card-media">
+            <img src="assets/posters/design.webp" alt="" loading="lazy" decoding="async" />
+          </figure>
+          <div class="card-body" data-label="Голос, календарь, консультация">
+            <h3 class="card-title">ИИ-консультант для мебельной студии</h3>
+            <p class="card-text">Понимает голос и текст в Telegram, помогает выбрать мебель и записывает на консультацию в Google Calendar.</p>
+            <ul class="chips" aria-label="Стек">
+              <li>n8n</li>
+              <li>Whisper</li>
+              <li>Calendar</li>
+            </ul>
+          </div>
+        </button>
+      </li>
+    </ol>
+
+  </div>
+</section>
+
+<!-- PROCESS ================================================== -->
+<section id="process" class="process">
+  <div class="container process-grid">
+    <div class="process-intro reveal">
+      <h2 class="section-title">Как я работаю</h2>
+      <p>Четыре этапа от брифа до боевой системы. На каждом — проверяемый артефакт на выходе.</p>
+    </div>
+    <ol class="process-list reveal">
+      <li class="step" style="--i:0">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <h3 class="step-title">Брифинг и аудит</h3>
+          <span class="step-meta">30–60 мин</span>
+          <p class="step-text">Один созвон. Описываете процесс, инструменты и где теряются заявки. На выходе — диагностика и предложение архитектуры в письменном виде.</p>
+        </div>
+      </li>
+      <li class="step" style="--i:1">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <h3 class="step-title">Архитектура</h3>
+          <span class="step-meta">1–3 дня</span>
+          <p class="step-text">Полный маршрут данных, точки интеграции, риски и ручной резервный сценарий. Согласуем до сборки.</p>
+        </div>
+      </li>
+      <li class="step" style="--i:2">
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <h3 class="step-title">Сборка и тесты</h3>
+          <span class="step-meta">1–3 недели</span>
+          <p class="step-text">n8n-сценарии, скрипты на Python, ИИ-агенты, голос. End-to-end проверка на боевых данных и логирование каждого шага.</p>
+        </div>
+      </li>
+      <li class="step" style="--i:3">
+        <span class="step-num">04</span>
+        <div class="step-body">
+          <h3 class="step-title">Передача и поддержка</h3>
+          <span class="step-meta">1–2 дня + по запросу</span>
+          <p class="step-text">Runbook, обучение команды, дежурные правки и алерты на сбои. Можно оставить меня на ретейнере.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ABOUT ==================================================== -->
+<section id="about" class="about">
+  <div class="container about-grid">
+    <h2 class="section-title reveal">О себе</h2>
+    <div class="about-copy reveal">
+      <p>Связываю ИИ, n8n, бизнес-API и CRM в систему, которой можно доверить процесс от обращения до записи в сделке. Работаю там, где ручной труд приводит к потерянным заявкам, забытым лидам и расхождениям в данных.</p>
+      <p>Архитектура строится вокруг полного маршрута данных. В систему закладываются логи, повторы, ошибки и ручной резервный сценарий. Результат показываю через видео, стек и маршрут данных — без воды.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES ================================================= -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="services-head reveal">
+      <h2 class="services-title">Услуги</h2>
+      <div class="services-divider"></div>
+    </div>
+    <div class="services-body">
+      <p class="services-intro reveal">
+        Собираю продакшн-агентов и автоматизации под боль бизнеса: от приёма заявок до RAG-баз и голосовых ассистентов. Подключаю их к вашим CRM, календарям и мессенджерам.
+      </p>
+      <ol class="services-grid">
+        <li class="service reveal" style="--i:0">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11Z"/></svg>
+          </span>
+          <h3>Заявки и лиды → CRM</h3>
+          <p>Формы, Telegram, сайт и звонки попадают в одно место — CRM, таблицу или менеджеру в чат.</p>
+        </li>
+        <li class="service reveal" style="--i:1">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+          </span>
+          <h3>Запись и календарь</h3>
+          <p>Проверка свободных слотов, выбор услуги, подтверждения, переносы и уведомления в одном сценарии.</p>
+        </li>
+        <li class="service reveal" style="--i:2">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+          </span>
+          <h3>Голос и боты</h3>
+          <p>Голосовые агенты, Telegram-боты, Mini Apps и квизы — приём, квалификация и передача итога в систему.</p>
+        </li>
+        <li class="service reveal" style="--i:3">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2Z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7Z"/></svg>
+          </span>
+          <h3>Базы знаний RAG</h3>
+          <p>Ответы по документам с источниками — для сотрудников, клиентов, регламентов и внутренних знаний.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER =================================================== -->
+<footer id="contact" class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-main">
+      <h2 class="footer-title">Опишите задачу — отвечу архитектурой за 24 часа.</h2>
+      <p class="footer-lead">1–2 предложения о процессе, текущие инструменты, где теряются данные. Без воды — сразу маршрут автоматизации.</p>
+      <ul class="footer-contacts">
+        <li><a href="https://t.me/RuslanFZ" target="_blank" rel="noopener">@RuslanFZ <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="mailto:rzaynullin108@gmail.com">rzaynullin108@gmail.com <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://github.com/ruslan-automation" target="_blank" rel="noopener">GitHub <span class="arrow" aria-hidden="true">↗</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-aside">
+      <nav class="footer-nav" aria-label="Подвал навигация">
+        <a href="#works">Работы</a>
+        <a href="#about">О себе</a>
+        <a href="#services">Услуги</a>
+      </nav>
+      <a href="#hero" class="back-top" data-back-top>↑ Наверх</a>
+    </div>
+  </div>
+  <div class="container footer-baseline">
+    <span>Ruslan Zaynullin · 2026</span>
+    <span>Казань · GMT+3</span>
+  </div>
+</footer>
+
+<!-- MODAL ==================================================== -->
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true" hidden>
+  <div class="modal-card" role="document">
+    <button class="modal-close" type="button" aria-label="Закрыть кейс">✕</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script type="module" src="assets/js/clock.js"></script>
+<script type="module" src="assets/js/motion.js"></script>
+<script type="module" src="assets/js/cases.js"></script>
+</body>
+</html>
