@@ -51,6 +51,8 @@ if (reduceMotion) {
 ---------------------------------------------------------------- */
 const nav = document.querySelector(".site-nav");
 const heroMotionItems = document.querySelectorAll(".hero-mask");
+const footerRevealStage = document.querySelector("[data-footer-reveal]");
+const footerRevealTarget = footerRevealStage?.querySelector(".site-footer");
 let lastScrollY = window.scrollY;
 let scrollFrame = 0;
 
@@ -61,6 +63,20 @@ const updateHeroScroll = (scrollY) => {
     const depth = Number.parseFloat(el.style.getPropertyValue("--depth")) || 0.5;
     el.style.setProperty("--hero-shift-x", `${(shift * depth).toFixed(2)}px`);
   });
+};
+
+const updateFooterReveal = () => {
+  if (!footerRevealStage || !footerRevealTarget) return;
+  if (reduceMotion) {
+    footerRevealTarget.style.setProperty("--footer-reveal-y", "0px");
+    return;
+  }
+  const rect = footerRevealStage.getBoundingClientRect();
+  const viewport = window.innerHeight || 1;
+  const progress = Math.min(1, Math.max(0, (viewport - rect.top) / viewport));
+  const eased = 1 - Math.pow(1 - progress, 3);
+  const offset = (1 - eased) * -300;
+  footerRevealTarget.style.setProperty("--footer-reveal-y", `${offset.toFixed(2)}px`);
 };
 
 const onScroll = () => {
@@ -80,12 +96,15 @@ const onScroll = () => {
     }
 
     updateHeroScroll(currentY);
+    updateFooterReveal();
     lastScrollY = currentY;
     scrollFrame = 0;
   });
 };
 window.addEventListener("scroll", onScroll, { passive: true });
+window.addEventListener("resize", updateFooterReveal, { passive: true });
 onScroll();
+updateFooterReveal();
 
 /* ----------------------------------------------------------------
    Smooth scroll (Lenis) — optional
