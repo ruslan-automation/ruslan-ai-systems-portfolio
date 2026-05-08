@@ -23,7 +23,7 @@ if (reduceMotion) {
         observer.unobserve(entry.target);
       }
     },
-    { threshold: 0.12, rootMargin: "0px 0px -6% 0px" },
+    { threshold: 0.1, rootMargin: "0px 0px -33% 0px" },
   );
 
   reveals.forEach((el) => {
@@ -65,18 +65,21 @@ const updateHeroScroll = (scrollY) => {
   });
 };
 
-const updateFooterReveal = () => {
-  if (!footerRevealStage || !footerRevealTarget) return;
+const updateFooterReveal = (scrollY) => {
+  if (!footerRevealTarget) return;
   if (reduceMotion) {
     footerRevealTarget.style.setProperty("--footer-reveal-y", "0px");
     return;
   }
-  const rect = footerRevealStage.getBoundingClientRect();
-  const viewport = window.innerHeight || 1;
-  const progress = Math.min(1, Math.max(0, (viewport - rect.top) / viewport));
-  const eased = 1 - Math.pow(1 - progress, 3);
-  const offset = (1 - eased) * -300;
-  footerRevealTarget.style.setProperty("--footer-reveal-y", `${offset.toFixed(2)}px`);
+
+  const viewportH = Math.max(1, window.innerHeight);
+  const maxScroll = Math.max(0, document.documentElement.scrollHeight - viewportH);
+  const distanceFromBottom = Math.max(0, maxScroll - scrollY);
+  const maxShift = Math.min(300, Math.max(160, viewportH * 0.4));
+  const revealRatio = Math.min(1, distanceFromBottom / viewportH);
+  const y = -maxShift * revealRatio;
+
+  footerRevealTarget.style.setProperty("--footer-reveal-y", `${y.toFixed(2)}px`);
 };
 
 const onScroll = () => {
@@ -96,15 +99,14 @@ const onScroll = () => {
     }
 
     updateHeroScroll(currentY);
-    updateFooterReveal();
+    updateFooterReveal(currentY);
     lastScrollY = currentY;
     scrollFrame = 0;
   });
 };
 window.addEventListener("scroll", onScroll, { passive: true });
-window.addEventListener("resize", updateFooterReveal, { passive: true });
+window.addEventListener("resize", onScroll);
 onScroll();
-updateFooterReveal();
 
 /* ----------------------------------------------------------------
    Smooth scroll (Lenis) — optional
