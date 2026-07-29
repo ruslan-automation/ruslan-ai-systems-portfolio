@@ -830,6 +830,9 @@ h1, h2, h3, h4, p {
   display: block;
   width: 100%;
   text-align: left;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
   background: transparent;
   border: 0;
   border-radius: 0;

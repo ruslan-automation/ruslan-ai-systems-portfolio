@@ -1,27 +1,33 @@
-const CDN = "https://ruslan-automation.github.io/portfolio/";
+const MEDIA_BASE = new URL("../../media/", import.meta.url);
 
-const POSTERS = {
-  "voice_clinic_site_booking_demo.mp4": "assets/posters/voice.webp",
-  "0317_ai_admin_dentistry_small_cover.mp4": "assets/posters/voice.webp",
-  "bitrix_booking_yclients_demo.mp4": "assets/posters/crm.webp",
-  "bitrix_telegram_ai_admin_demo.mp4": "assets/posters/crm.webp",
-  "bitrix_demo_subtitled.mp4": "assets/posters/crm.webp",
-  "miniapp_ai_copilot_demo.mp4": "assets/posters/miniapp.webp",
-  "Китчен.mp4": "assets/posters/kitchen.webp",
-  "0317 (2).mp4": "assets/posters/rag.webp",
-  "Shorts HH2.mp4": "assets/posters/leads.webp",
-  "Дизайн.mp4": "assets/posters/design.webp",
-  "Neon.mp4": "assets/posters/neon.webp",
-  "Бот вакансий.mp4": "assets/posters/vacancy.webp",
+export const POSTERS = {
+  "voice-clinic-booking.mp4": "assets/posters/voice.webp",
+  "voice-dentistry-demo.mp4": "assets/posters/voice.webp",
+  "bitrix-booking-yclients.mp4": "assets/posters/crm.webp",
+  "bitrix-telegram-ai-admin.mp4": "assets/posters/crm.webp",
+  "bitrix-ai-dispatcher.mp4": "assets/posters/crm.webp",
+  "telegram-miniapp-ai-copilot.mp4": "assets/posters/miniapp.webp",
+  "kitchen-lead-bot.mp4": "assets/posters/kitchen.webp",
+  "rag-knowledge-base-demo.mp4": "assets/posters/rag.webp",
+  "lead-radar-demo.mp4": "assets/posters/leads.webp",
+  "furniture-ai-consultant.mp4": "assets/posters/design.webp",
+  "neon-calculator-bot.mp4": "assets/posters/neon.webp",
+  "job-search-bot.mp4": "assets/posters/vacancy.webp",
 };
 
-const asset = (file) =>
-  CDN + encodeURIComponent(file).replace(/%2F/g, "/").replace(/%28/g, "(").replace(/%29/g, ")");
-const posterFor = (file) => POSTERS[file] || "assets/posters/voice.webp";
-const VERTICAL_VIDEO_FILES = new Set(["miniapp_ai_copilot_demo.mp4", "Shorts HH2.mp4", "Дизайн.mp4", "Neon.mp4"]);
+export const asset = (file) => new URL(file, MEDIA_BASE).href;
+export const posterFor = (file) =>
+  new URL(`../../${POSTERS[file] || "assets/posters/voice.webp"}`, import.meta.url).href;
+export const VERTICAL_VIDEO_FILES = new Set([
+  "telegram-miniapp-ai-copilot.mp4",
+  "lead-radar-demo.mp4",
+  "furniture-ai-consultant.mp4",
+  "neon-calculator-bot.mp4",
+]);
 
-const PROJECTS = {
+export const PROJECTS = {
   voiceSales: {
+    slug: "voice-clinic",
     badge: "Сложная интеграция",
     title: "Голосовой ИИ-администратор для клиники",
     lead: "Клиент звонит прямо с сайта. Агент уточняет услугу и время, проверяет свободные окна и доводит сценарий до записи в расписании и CRM.",
@@ -39,13 +45,13 @@ const PROJECTS = {
     ],
     stack: ["Python", "FastAPI", "Vapi", "OpenAI / LLM", "YCLIENTS API", "Bitrix24 API", "PostgreSQL"],
     video: {
-      file: "voice_clinic_site_booking_demo.mp4",
+      file: "voice-clinic-booking.mp4",
       title: "Основной сценарий: звонок с сайта и запись",
       note: "Клиент звонит прямо на сайте клиники, ИИ уточняет услугу и время, после чего запись появляется в календаре.",
     },
     secondary: [
       {
-        file: "0317_ai_admin_dentistry_small_cover.mp4",
+        file: "voice-dentistry-demo.mp4",
         title: "Дополнительное демо: звонок и CRM-сценарий",
         note: "Технический сценарий голосового агента с проверкой слотов и фиксацией лида.",
       },
@@ -53,6 +59,7 @@ const PROJECTS = {
   },
 
   bitrixDispatcher: {
+    slug: "bitrix-crm",
     badge: "Готово к внедрению",
     title: "CRM-автоматизация Bitrix24 + YCLIENTS + ЮKassa",
     lead: "Система ведёт клиента от сайта до онлайн-записи, оплаты и сделки в Bitrix24. Дополнительные сценарии показывают маршрутизацию обращений и ручную проверку спорных кейсов.",
@@ -70,18 +77,18 @@ const PROJECTS = {
     ],
     stack: ["FastAPI", "Bitrix24 Webhook", "YCLIENTS", "ЮKassa", "PostgreSQL", "OpenRouter", "Telegram"],
     video: {
-      file: "bitrix_booking_yclients_demo.mp4",
+      file: "bitrix-booking-yclients.mp4",
       title: "Основной сценарий: онлайн-запись, оплата и сделка",
       note: "Клиент выбирает услугу и время, оплачивает через ЮKassa, а Bitrix24 получает сделку со статусом оплаты.",
     },
     secondary: [
       {
-        file: "bitrix_telegram_ai_admin_demo.mp4",
+        file: "bitrix-telegram-ai-admin.mp4",
         title: "Сценарий 2: Telegram ИИ-администратор",
         note: "Клиент переходит в чат-канал, выбирает процедуру и время, получает ссылку на предоплату.",
       },
       {
-        file: "bitrix_demo_subtitled.mp4",
+        file: "bitrix-ai-dispatcher.mp4",
         title: "Сценарий 3: ИИ-диспетчер заявок",
         note: "Приём обращений из Telegram и веб-форм, ИИ-классификация и операторский контур.",
       },
@@ -89,6 +96,7 @@ const PROJECTS = {
   },
 
   miniAppCopilot: {
+    slug: "telegram-miniapp",
     badge: "Telegram Mini App",
     title: "База знаний для команды в Telegram Mini App",
     lead: "Сотрудник задаёт вопрос текстом или голосом, а ИИ ищет ответ в базе знаний, показывает подтверждение из источников и находит подходящие медиафайлы.",
@@ -106,13 +114,14 @@ const PROJECTS = {
     ],
     stack: ["React", "Vite", "Telegram Mini App", "FastAPI", "RAG", "Qdrant", "Redis", "MinIO", "PostgreSQL", "Docker"],
     video: {
-      file: "miniapp_ai_copilot_demo.mp4",
+      file: "telegram-miniapp-ai-copilot.mp4",
       title: "Telegram Mini App: чат с базой знаний и поиск медиа",
       note: "Сотрудник задаёт вопрос, получает ответ с подтверждением из базы и находит медиафайл по смыслу.",
     },
   },
 
   kitchenSalesBot: {
+    slug: "kitchen-lead-bot",
     badge: "Сбор заявок",
     title: "Telegram-бот для заявок на кухни",
     lead: "Бот проводит клиента по короткому опросу, собирает заявку и передаёт её менеджеру через Google Sheets.",
@@ -130,13 +139,14 @@ const PROJECTS = {
     ],
     stack: ["n8n", "Telegram API", "Google Sheets", "HTTP Request", "логика состояний"],
     video: {
-      file: "Китчен.mp4",
+      file: "kitchen-lead-bot.mp4",
       title: "Квиз, таблица лидов и догрев в одном сценарии",
       note: "Бот проводит пользователя по квизу, кладёт лид в Google Sheets и запускает догрев.",
     },
   },
 
   neonBot: {
+    slug: "neon-calculator",
     badge: "Визуальный расчёт",
     title: "Бот для расчёта неоновых вывесок",
     lead: "Бот для заказа неоновых вывесок: помогает выбрать текст, размер и цвет, показывает пример будущей вывески и сразу считает примерную стоимость.",
@@ -154,13 +164,14 @@ const PROJECTS = {
     ],
     stack: ["n8n", "KIE.ai", "Gemini", "Telegram API", "ИИ-агент"],
     video: {
-      file: "Neon.mp4",
+      file: "neon-calculator-bot.mp4",
       title: "От параметров заказа до визуализации вывески",
       note: "Видео показывает сбор параметров в Telegram и переход к визуальному макету для неоновой вывески.",
     },
   },
 
   vacancyBot: {
+    slug: "job-search-bot",
     badge: "Готово к внедрению",
     title: "Бот для поиска вакансий",
     lead: "Python-система для HH.ru: ищет вакансии, ИИ оценивает релевантность, генерирует сопроводительные письма и работает в автоматическом или ручном режиме на VPS.",
@@ -178,13 +189,14 @@ const PROJECTS = {
     ],
     stack: ["Python 3.10+", "Playwright", "OpenRouter", "SQLite", "Telegram Bot", "systemd"],
     video: {
-      file: "Бот вакансий.mp4",
+      file: "job-search-bot.mp4",
       title: "Видео работы бота по вакансиям",
       note: "Видео показывает, как бот ищет вакансии, оценивает совпадение и готовит отклики через Telegram.",
     },
   },
 
   designBot: {
+    slug: "furniture-ai-consultant",
     badge: "Голосовой помощник",
     title: "ИИ-консультант для мебельной студии",
     lead: "Telegram-сценарий понимает текст и голос, помогает выбрать мебель и записывает клиента на консультацию в Google Calendar.",
@@ -202,7 +214,7 @@ const PROJECTS = {
     ],
     stack: ["n8n", "Groq Whisper", "OpenRouter", "Google Calendar", "Telegram Bot"],
     video: {
-      file: "Дизайн.mp4",
+      file: "furniture-ai-consultant.mp4",
       title: "Голосовой ИИ-консультант с записью",
       note: "Ассистент общается в Telegram, понимает голос и переводит диалог в консультацию.",
     },
@@ -266,7 +278,7 @@ function renderModal(data) {
       ${stack ? `<ul class="modal-stack chips">${stack}</ul>` : ""}
       <div class="modal-actions">
         <a class="btn primary" href="https://t.me/RuslanFZ" target="_blank" rel="noopener">Обсудить похожий проект <span class="btn-arrow" aria-hidden="true">↗</span></a>
-        <a class="btn ghost" href="https://github.com/ruslan-automation" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="/cases/${encodeURIComponent(data.slug)}/">Открыть страницу кейса</a>
       </div>
     </div>`;
 }
