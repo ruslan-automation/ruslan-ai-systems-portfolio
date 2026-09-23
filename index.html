@@ -1,454 +1,729 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Руслан Зайнуллин — ИИ-инженер автоматизации бизнеса</title>
-<meta name="description" content="ИИ-инженер: n8n, Python, LLM, RAG, голосовые агенты. Связываю формы, звонки, Telegram, CRM и календарь в маршрут от заявки до записи или оплаты." />
-<meta name="theme-color" content="#F5F5F5" />
-<link rel="canonical" href="https://ruslanzaynullin.ru/" />
-<meta property="og:title" content="Руслан Зайнуллин — ИИ-инженер автоматизации бизнеса" />
-<meta property="og:description" content="Собираю ИИ-автоматизации для бизнеса: заявки, голос, Telegram, CRM, календарь, RAG-базы знаний и рабочие сценарии на ваших данных." />
-<meta property="og:image" content="https://ruslanzaynullin.ru/assets/posters/voice.webp" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ruslanzaynullin.ru/" />
-<meta property="og:locale" content="ru_RU" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Руслан Зайнуллин — ИИ-инженер автоматизации бизнеса" />
-<meta name="twitter:description" content="Заявки, голос, Telegram, CRM, календарь и ИИ-агенты в одном рабочем маршруте." />
-<meta name="twitter:image" content="https://ruslanzaynullin.ru/assets/posters/voice.webp" />
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://ruslanzaynullin.ru/#person",
-      "name": "Руслан Зайнуллин",
-      "alternateName": "Ruslan Zaynullin",
-      "jobTitle": "ИИ-инженер",
-      "url": "https://ruslanzaynullin.ru/",
-      "image": "https://ruslanzaynullin.ru/assets/img/ruslan-about.webp",
-      "email": "mailto:rzaynullin108@gmail.com",
-      "sameAs": [
-        "https://github.com/ruslan-automation",
-        "https://t.me/RuslanFZ"
-      ],
-      "knowsAbout": [
-        "ИИ-автоматизации",
-        "n8n",
-        "Python",
-        "CRM-интеграции",
-        "голосовые агенты",
-        "RAG-базы знаний"
-      ],
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "ИИ-инженер"
-      }
-    },
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://ruslanzaynullin.ru/#service",
-      "name": "ИИ-автоматизации для бизнеса",
-      "url": "https://ruslanzaynullin.ru/",
-      "description": "Автоматизация заявок, звонков, Telegram, CRM, календарей, голосовых агентов и баз знаний для бизнеса.",
-      "provider": {
-        "@id": "https://ruslanzaynullin.ru/#person"
-      },
-      "areaServed": "RU",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "url": "https://t.me/RuslanFZ",
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Руслан Зайнуллин | ИИ-автоматизация и интеграции</title>
+    <meta
+      name="description"
+      content="Портфолио Руслана Зайнуллина: ИИ-ассистенты, базы знаний RAG, Telegram-боты и голосовые сценарии. Четыре демо, которые можно попробовать."
+    />
+    <meta name="theme-color" content="#f5f6f7" />
+    <link rel="canonical" href="https://ruslanzaynullin.ru/" />
+    <meta
+      property="og:title"
+      content="Руслан Зайнуллин | ИИ-автоматизация и интеграции"
+    />
+    <meta
+      property="og:description"
+      content="От обращения до результата. Четыре работающих демо: база знаний, консультант, анкета и голосовой администратор."
+    />
+    <meta
+      property="og:image"
+      content="https://ruslanzaynullin.ru/assets/img/clinic-film-poster.webp"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ruslanzaynullin.ru/" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/asterisk.svg" />
+    <link
+      rel="preload"
+      href="assets/fonts/manrope-cyrillic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/portfolio.css?v=20260923-1" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Руслан Зайнуллин",
+        "alternateName": "Ruslan Zaynullin",
+        "jobTitle": "Инженер ИИ-автоматизации",
+        "url": "https://ruslanzaynullin.ru/",
+        "image": "https://ruslanzaynullin.ru/assets/img/ruslan-about.webp",
         "email": "rzaynullin108@gmail.com",
-        "availableLanguage": ["ru"]
+        "sameAs": [
+          "https://github.com/ruslan-automation",
+          "https://t.me/RuslanFZ"
+        ],
+        "knowsAbout": [
+          "Python",
+          "n8n",
+          "API",
+          "RAG",
+          "ИИ-ассистенты",
+          "Голосовые агенты"
+        ]
       }
-    }
-  ]
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/main.css?v=portfolio-media-20260729" />
-<link rel="icon" type="image/svg+xml" href="assets/img/asterisk.svg" />
-</head>
-<body>
-<div class="intro-overlay" aria-hidden="true">
-  <div class="intro-brand">Ruslan Zaynullin</div>
-</div>
-
-<a class="skip-link" href="#main">Перейти к содержимому</a>
-
-<header class="site-nav">
-  <div class="container nav-inner">
-    <div class="nav-spacer" aria-hidden="true"></div>
-    <nav class="nav-anchors" aria-label="Основная навигация">
-      <a href="#works">Работы</a>
-      <a href="#about">О себе</a>
-      <a href="#services">Услуги</a>
-      <a href="#contact">Контакт</a>
-    </nav>
-    <div class="nav-spacer" aria-hidden="true"></div>
-  </div>
-</header>
-
-<main id="main">
-
-<!-- HERO ===================================================== -->
-<section id="hero" class="hero">
-  <div class="container">
-    <div class="hero-typo">
-
-      <div class="hero-mask hero-mask--name" style="--depth:-.52">
-        <h1 class="hero-mask-inner" style="--i:0">
-          Руслан Зайнуллин
-          <span class="sr-only"> — ИИ-инженер. Собираю ИИ-автоматизации для бизнеса.</span>
-        </h1>
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#hero" aria-label="Руслан Зайнуллин, в начало"
+          ><span class="monogram">RZ</span
+          ><span class="brand-name">Руслан Зайнуллин</span></a
+        >
+        <nav class="navigation" aria-label="Основная навигация">
+          <a href="#works">Проекты <sup>04</sup></a
+          ><a href="#about">Обо мне</a><a href="#contact">Контакт</a>
+        </nav>
+        <a
+          class="header-contact"
+          href="https://t.me/RuslanFZ"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Написать
+          <svg class="icon" aria-hidden="true">
+            <use href="assets/icons/lucide.svg#arrow-up-right" /></svg
+        ></a>
+        <button
+          class="icon-button menu-toggle"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          hidden
+        >
+          <svg class="icon" aria-hidden="true">
+            <use href="assets/icons/lucide.svg#menu" />
+          </svg>
+        </button>
       </div>
-
-      <aside class="hero-aside hero-aside--lines">
-        <p class="hero-lead">
-          <span class="hero-lead-line" style="--line:0">Помогаю бизнесу автоматизировать продажи, поддержку и операции</span>
-          <span class="hero-lead-line" style="--line:1">через ИИ-агентов, голос и интеграции с CRM.</span>
-          <span class="hero-lead-line" style="--line:2">Заявка превращается в сделку без потерь и ручной работы.</span>
-          <span class="hero-lead-line" style="--line:3">За 2 недели — рабочий сценарий на ваших данных.</span>
-          <span class="hero-lead-line" style="--line:4">Опишите задачу в <a class="hero-link" href="https://t.me/RuslanFZ" target="_blank" rel="noopener">Telegram.</a></span>
-        </p>
-      </aside>
-
-      <div class="hero-mask hero-mask--role hero-mask--right" style="--depth:.18">
-        <div class="hero-mask-inner" style="--i:1">ИИ-инженер</div>
-      </div>
-
-      <div class="hero-mask hero-mask--system" style="--depth:.58">
-        <div class="hero-mask-inner" style="--i:2">Собираю ИИ-автоматизации для бизнеса</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- WORKS ==================================================== -->
-<section id="works" class="works">
-  <div class="container">
-    <div class="section-head reveal">
-      <h2 class="section-title">Избранные работы</h2>
-    </div>
-  </div>
-
-  <div class="rail-wrap" data-rail>
-    <ul class="rail" tabindex="0" aria-label="Лента кейсов">
-      <li class="card reveal" style="--i:0">
-        <a class="card-trigger" href="/cases/voice-clinic/" data-case="voiceSales" aria-label="Открыть кейс: Голосовой ИИ-администратор для клиники">
-          <figure class="card-media">
-            <img src="assets/posters/voice.webp" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <div class="card-body" data-label="Голосовой ИИ, запись">
-            <h3 class="card-title">Голосовой ИИ-администратор для клиники</h3>
-            <p class="card-text">Звонок прямо с сайта, агент уточняет услугу и время, проверяет слоты и доводит сценарий до записи в CRM.</p>
-            <ul class="chips" aria-label="Стек">
-              <li>Vapi</li>
-              <li>OpenAI</li>
-              <li>FastAPI</li>
-            </ul>
+      <nav
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="Мобильная навигация"
+        hidden
+      >
+        <a href="#works">Четыре проекта</a><a href="#about">Обо мне</a
+        ><a href="#contact">Контакты</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <video
+          id="hero-video"
+          class="hero-video"
+          muted
+          playsinline
+          preload="metadata"
+          poster="assets/img/clinic-film-poster.webp"
+          aria-label="Демонстрационный ролик об автоматической обработке заявки"
+        ></video>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow hero-eyebrow">
+              <span></span> ИИ-автоматизация и интеграции
+            </p>
+            <h1 id="hero-title">
+              Руслан<br />Зайнуллин<span class="name-dot">.</span>
+            </h1>
+            <p class="hero-description">
+              Собираю системы, которые отвечают клиентам<br
+                class="desktop-break"
+              />
+              и доводят обращение до результата.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-light" href="#works"
+                >Смотреть проекты
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#arrow-down" /></svg></a
+              ><button class="film-open text-button" type="button" hidden>
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#play" />
+                </svg>
+                Ролик со звуком
+              </button>
+            </div>
           </div>
-        </a>
-      </li>
-
-      <li class="card reveal" style="--i:1">
-        <a class="card-trigger" href="/cases/bitrix-crm/" data-case="bitrixDispatcher" aria-label="Открыть кейс: CRM-автоматизация Bitrix24">
-          <figure class="card-media">
-            <img src="assets/posters/crm.webp" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <div class="card-body" data-label="CRM, оплата, запись">
-            <h3 class="card-title">CRM-автоматизация Bitrix24 + YCLIENTS + ЮKassa</h3>
-            <p class="card-text">Сквозной маршрут: сайт → онлайн-запись → предоплата → сделка в Bitrix24 → уведомление менеджеру.</p>
-            <ul class="chips" aria-label="Стек">
-              <li>Bitrix24</li>
-              <li>YCLIENTS</li>
-              <li>ЮKassa</li>
-            </ul>
+          <div class="hero-footer">
+            <div>
+              <span class="film-index">01 / Сценарий</span
+              ><span class="film-title">Заявка, которую почти потеряли</span>
+            </div>
+            <div class="film-controls" hidden>
+              <button
+                class="icon-button"
+                id="hero-pause"
+                type="button"
+                aria-label="Воспроизвести видео"
+                title="Воспроизвести видео"
+              >
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#play" />
+                </svg></button
+              ><button
+                class="icon-button"
+                id="hero-sound"
+                type="button"
+                aria-label="Включить звук"
+                title="Включить звук"
+                aria-pressed="false"
+              >
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#volume-x" />
+                </svg>
+              </button>
+            </div>
           </div>
-        </a>
-      </li>
-
-      <li class="card reveal" style="--i:2">
-        <a class="card-trigger" href="/cases/telegram-miniapp/" data-case="miniAppCopilot" aria-label="Открыть кейс: База знаний в Telegram Mini App">
-          <figure class="card-media">
-            <img src="assets/posters/miniapp.webp" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <div class="card-body" data-label="База знаний, Mini App">
-            <h3 class="card-title">База знаний для команды в Telegram Mini App</h3>
-            <p class="card-text">Сотрудник задаёт вопрос текстом или голосом — система ищет ответ в базе, показывает источники и медиа.</p>
-            <ul class="chips" aria-label="Стек">
-              <li>React</li>
+        </div>
+      </section>
+      <section
+        id="works"
+        class="projects container"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow accent">Портфолио / 01</p>
+            <h2 id="projects-title">
+              Работа в действии<span class="accent">.</span>
+            </h2>
+          </div>
+          <p class="section-note">
+            Четыре демо.<br />Результат можно проверить самому.
+          </p>
+        </div>
+        <div class="demo-channels">
+          <div>
+            <strong>Все демо в одном месте</strong>
+            <p>Общий вход в портфолио через удобный мессенджер.</p>
+          </div>
+          <div class="channel-links">
+            <a
+              class="button button-outline"
+              href="https://t.me/RZAutomationBot"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons/lucide.svg#send" /></svg
+              >Telegram
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons/lucide.svg#arrow-up-right" /></svg></a
+            ><a
+              class="button button-outline"
+              href="https://max.ru/se13981254_1_bot"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons/lucide.svg#message-circle" /></svg
+              >MAX
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons/lucide.svg#arrow-up-right" /></svg
+            ></a>
+          </div>
+          <p class="channel-note">
+            В MAX размещены ссылки на демо, а не отдельные приложения MAX.
+          </p>
+        </div>
+        <article class="project" id="knowledge" data-demo="knowledge">
+          <div
+            class="project-visual visual-rag"
+            aria-label="Учебный пример ответа по документу"
+          >
+            <div class="preview-header">
+              <span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#book-open" /></svg
+                >Northdesk</span
+              ><span>База знаний</span>
+            </div>
+            <div class="rag-body">
+              <div class="document-label">
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#file-text" /></svg
+                >Условия консультации.txt
+              </div>
+              <p class="example-question">Что входит в базовый пакет?</p>
+              <div class="example-answer">
+                <span class="tiny-label">Ответ по документу</span>
+                <p>Одна консультация.<br />Стоимость пакета — 1 200 ₽.</p>
+              </div>
+              <div class="source">
+                <span class="source-index">1</span>
+                <div>
+                  <strong>Условия консультации</strong>
+                  <p>«Базовый пакет: 1 200 рублей,<br />одна консультация».</p>
+                </div>
+              </div>
+            </div>
+            <div class="preview-footer">
+              <span class="status-dot"></span>Учебный пример
+              <span>Ответ + источник</span>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="project-meta">
+              <span>01 / База знаний</span><span>Telegram Mini App</span>
+            </p>
+            <h3>
+              Ответы по вашим<br class="desktop-break" />
+              документам
+            </h3>
+            <p class="project-description">
+              Загружаете документ, задаёте вопрос и получаете ответ со ссылкой
+              на источник. Основание ответа можно проверить.
+            </p>
+            <ul class="tech-list" aria-label="Технологии">
               <li>RAG</li>
+              <li>Python</li>
               <li>Qdrant</li>
-            </ul>
-          </div>
-        </a>
-      </li>
-
-      <li class="card reveal" style="--i:3">
-        <a class="card-trigger" href="/cases/kitchen-lead-bot/" data-case="kitchenSalesBot" aria-label="Открыть кейс: Telegram-бот для заявок на кухни">
-          <figure class="card-media">
-            <img src="assets/posters/kitchen.webp" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <div class="card-body" data-label="Telegram, квиз, лиды">
-            <h3 class="card-title">Telegram-бот для заявок на кухни</h3>
-            <p class="card-text">Бот ведёт по короткому квизу, собирает параметры кухни, сохраняет лид и передаёт менеджеру в работу.</p>
-            <ul class="chips" aria-label="Стек">
-              <li>n8n</li>
-              <li>Telegram</li>
-              <li>Sheets</li>
-            </ul>
-          </div>
-        </a>
-      </li>
-
-      <li class="card reveal" style="--i:4">
-        <a class="card-trigger" href="/cases/neon-calculator/" data-case="neonBot" aria-label="Открыть кейс: Бот для расчёта неоновых вывесок">
-          <figure class="card-media">
-            <img src="assets/posters/neon.webp" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <div class="card-body" data-label="Telegram, расчёт, макет">
-            <h3 class="card-title">Бот для расчёта неоновых вывесок</h3>
-            <p class="card-text">Бот помогает выбрать параметры вывески, показывает пример и сразу считает примерную стоимость.</p>
-            <ul class="chips" aria-label="Стек">
-              <li>n8n</li>
-              <li>KIE.ai</li>
               <li>Gemini</li>
             </ul>
+            <p class="demo-limit">
+              <strong>В демо:</strong> один документ до 5 МБ и 10 вопросов на
+              посетителя. Только обезличенные данные.
+            </p>
+            <a
+              class="button button-primary demo-launch"
+              href="https://t.me/Ragdemonstrationbot"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Открыть базу знаний
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons/lucide.svg#arrow-up-right" /></svg
+            ></a>
+            <details class="project-details">
+              <summary>
+                Моя работа и границы демо
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#plus" />
+                </svg>
+              </summary>
+              <div>
+                <p>
+                  <strong>Реализация.</strong> Загрузка и индексация документа,
+                  поиск фрагментов, генерация ответа с источниками, отдельное
+                  пространство посетителя и ограничения расходов.
+                </p>
+                <p>
+                  <strong>Проверка.</strong> Можно задать вопрос по документу и
+                  вопрос, ответа на который в нём нет. Источники помогают
+                  проверить ответ, но не гарантируют безошибочность модели.
+                </p>
+              </div>
+            </details>
           </div>
-        </a>
-      </li>
-
-      <li class="card reveal" style="--i:5">
-        <a class="card-trigger" href="/cases/job-search-bot/" data-case="vacancyBot" aria-label="Открыть кейс: Бот для поиска вакансий">
-          <figure class="card-media">
-            <img src="assets/posters/vacancy.webp" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <div class="card-body" data-label="Python, HH.ru, Telegram">
-            <h3 class="card-title">Бот для поиска вакансий</h3>
-            <p class="card-text">Telegram-бот на Python мониторит вакансии на HH.ru, оценивает совпадение с профилем и готовит персонализированные отклики.</p>
-            <ul class="chips" aria-label="Стек">
-              <li>Python</li>
-              <li>Playwright</li>
-              <li>Telegram</li>
-            </ul>
+        </article>
+        <article class="project" id="consultant" data-demo="consultant">
+          <div
+            class="project-visual visual-consultant"
+            aria-label="Учебный пример диалога о кухне"
+          >
+            <div class="preview-header">
+              <span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#message-circle" /></svg
+                >Консультант по кухне</span
+              ><span>Диалог</span>
+            </div>
+            <img
+              class="kitchen-photo"
+              src="assets/img/kitchen-consultant.webp"
+              alt="Интерьер кухни из материалов демонстрации"
+              width="720"
+              height="400"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="conversation">
+              <p class="client-message">
+                Нужна светлая кухня. Помещение небольшое, с планировкой пока не
+                определился.
+              </p>
+              <p class="assistant-message">
+                <span class="tiny-label">Консультант</span>Какая примерная длина
+                стены? И где находятся окно и дверь?
+              </p>
+            </div>
+            <div class="preview-footer">
+              <span class="status-dot"></span>Учебный пример
+              <span>Текст и голос</span>
+            </div>
           </div>
-        </a>
-      </li>
-
-      <li class="card reveal" style="--i:6">
-        <a class="card-trigger" href="/cases/furniture-ai-consultant/" data-case="designBot" aria-label="Открыть кейс: ИИ-консультант для мебельной студии">
-          <figure class="card-media">
-            <img src="assets/posters/design.webp" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <div class="card-body" data-label="Голос, календарь, консультация">
-            <h3 class="card-title">ИИ-консультант для мебельной студии</h3>
-            <p class="card-text">Понимает голос и текст в Telegram, помогает выбрать мебель и записывает на консультацию в Google Calendar.</p>
-            <ul class="chips" aria-label="Стек">
-              <li>n8n</li>
+          <div class="project-copy">
+            <p class="project-meta">
+              <span>02 / Свободный диалог</span><span>Telegram</span>
+            </p>
+            <h3>Консультант,<br />который уточняет задачу</h3>
+            <p class="project-description">
+              Понимает текст и короткие голосовые сообщения, уточняет пожелания
+              к кухне и проводит к тестовой записи на консультацию.
+            </p>
+            <ul class="tech-list" aria-label="Технологии">
+              <li>Gemini</li>
               <li>Whisper</li>
-              <li>Calendar</li>
+              <li>Python</li>
+              <li>Telegram API</li>
             </ul>
+            <p class="demo-limit">
+              <strong>В демо:</strong> учебные сведения и тестовая запись.
+              Обращение не передаётся реальному сотруднику или в рабочую CRM.
+            </p>
+            <a
+              class="button button-primary demo-launch"
+              href="https://t.me/Consultkitchenbot?start=consult"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Поговорить с консультантом
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons/lucide.svg#arrow-up-right" /></svg
+            ></a>
+            <details class="project-details">
+              <summary>
+                Моя работа и границы демо
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#plus" />
+                </svg>
+              </summary>
+              <div>
+                <p>
+                  <strong>Реализация.</strong> Контекст диалога, распознавание
+                  голосовых сообщений, работа модели с учебными сведениями и
+                  отдельная серверная проверка действий записи.
+                </p>
+                <p>
+                  <strong>Проверка.</strong> Смените пожелания в середине
+                  разговора или отправьте короткое голосовое сообщение. В
+                  отличие от анкеты ниже, здесь нет фиксированного порядка
+                  вопросов.
+                </p>
+              </div>
+            </details>
           </div>
-        </a>
-      </li>
-    </ul>
-
-  </div>
-</section>
-
-<!-- PROCESS ================================================== -->
-<section id="process" class="process">
-  <div class="container">
-    <div class="section-head reveal">
-      <h2 class="section-title">Как я работаю</h2>
-    </div>
-    <div class="process-grid">
-      <div class="process-intro">
-        <p class="reveal" style="--i:0">Сначала разбираю текущий процесс: откуда приходят заявки, где теряются данные, какие действия команда повторяет вручную.</p>
-        <p class="reveal" style="--i:1">После этого собираю систему по этапам: схема маршрута, рабочий прототип, тесты на ваших данных и передача с инструкциями для команды.</p>
+        </article>
+        <article class="project" id="quiz" data-demo="quiz">
+          <div
+            class="project-visual visual-quiz"
+            aria-label="Учебный пример результата кнопочной анкеты"
+          >
+            <div class="preview-header">
+              <span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#list-checks" /></svg
+                >Анкета кухни</span
+              ><span>04 / 04</span>
+            </div>
+            <div class="quiz-layout">
+              <img
+                src="assets/img/kitchen-quiz.webp"
+                alt="Кухня из демонстрационной подборки"
+                width="480"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="quiz-result">
+                <span class="tiny-label">Итог анкеты</span>
+                <h4>Пожелания<br />собраны</h4>
+                <dl>
+                  <div>
+                    <dt>Планировка</dt>
+                    <dd>Угловая</dd>
+                  </div>
+                  <div>
+                    <dt>Размер</dt>
+                    <dd>3–5 м</dd>
+                  </div>
+                  <div>
+                    <dt>Бюджет</dt>
+                    <dd>150–300 тыс. ₽</dd>
+                  </div>
+                  <div>
+                    <dt>Срок</dt>
+                    <dd>Идёт ремонт</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="preview-footer">
+              <span class="status-dot"></span>Учебный пример
+              <span>Анкета + подборка</span>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="project-meta">
+              <span>03 / Кнопочный сценарий</span><span>Telegram</span>
+            </p>
+            <h3>Из ответов клиента<br />в понятную анкету</h3>
+            <p class="project-description">
+              Бот последовательно собирает пожелания к кухне, показывает итог,
+              фотографии и видеокружок. Предсказуемый сценарий без свободного
+              диалога.
+            </p>
+            <ul class="tech-list" aria-label="Состав сценария">
+              <li>Telegram</li>
+              <li>Кнопочная логика</li>
+              <li>Фото и видео</li>
+            </ul>
+            <p class="demo-limit">
+              <strong>В демо:</strong> реальная заявка не создаётся. Обещание
+              ответа за 15 минут в старом видеокружке к демонстрации не
+              относится.
+            </p>
+            <a
+              class="button button-primary demo-launch"
+              href="https://t.me/Kitchendemobot?start=quiz"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Пройти анкету
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons/lucide.svg#arrow-up-right" /></svg
+            ></a>
+            <details class="project-details">
+              <summary>
+                Моя работа и границы демо
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#plus" />
+                </svg>
+              </summary>
+              <div>
+                <p>
+                  <strong>Реализация.</strong> Последовательность вопросов,
+                  кнопочные ветвления, сбор ответов в итоговую анкету и выдача
+                  медиаматериалов. Демо отделено от исходного рабочего сценария.
+                </p>
+                <p>
+                  <strong>Проверка.</strong> Пройдите вопросы и сравните итог со
+                  своими ответами. В конце не будет звонка менеджера или
+                  реального заказа.
+                </p>
+              </div>
+            </details>
+          </div>
+        </article>
+        <article class="project" id="voice" data-demo="voice">
+          <div
+            class="project-visual visual-voice"
+            aria-label="Учебный пример записи на консультацию"
+          >
+            <div class="preview-header">
+              <span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#phone" /></svg
+                >Голосовой администратор</span
+              ><span>ElevenLabs</span>
+            </div>
+            <div class="voice-body">
+              <div class="waveform" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                ><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                ><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <p class="voice-quote">
+                «Хочу записаться на консультацию.<br />Есть время после обеда?»
+              </p>
+              <div class="appointment">
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#calendar-check" />
+                </svg>
+                <div>
+                  <span class="tiny-label">Первичная консультация</span
+                  ><strong>15:00</strong>
+                </div>
+                <span class="appointment-state">Учебная<br />запись</span>
+              </div>
+            </div>
+            <div class="preview-footer">
+              <span class="status-dot"></span>Учебный пример
+              <span>Разговор + запись</span>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="project-meta">
+              <span>04 / Голосовой сценарий</span><span>Веб-демо</span>
+            </p>
+            <h3>От разговора<br />до записи в расписании</h3>
+            <p class="project-description">
+              Голосовой администратор уточняет услугу, помогает выбрать время и
+              создаёт учебную запись. В общем боте выберите «Запись в клинику».
+            </p>
+            <ul class="tech-list" aria-label="Технологии">
+              <li>ElevenLabs</li>
+              <li>Python</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <p class="demo-limit">
+              <strong>В демо:</strong> вымышленная клиника и учебная запись.
+              Работа речи на разных телефонах ещё проверяется; разговор
+              обрабатывает ElevenLabs.
+            </p>
+            <div class="project-actions">
+              <a
+                class="button button-primary demo-launch"
+                href="https://t.me/RZAutomationBot"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Открыть через Telegram
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#arrow-up-right" /></svg></a
+              ><a
+                class="text-link"
+                href="https://demo.ruslanzaynullin.ru/demo/voice/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Открыть в браузере
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#arrow-up-right" /></svg
+              ></a>
+            </div>
+            <details class="project-details">
+              <summary>
+                Моя работа и границы демо
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#plus" />
+                </svg>
+              </summary>
+              <div>
+                <p>
+                  <strong>Реализация.</strong> Связка голосового агента,
+                  проверки доступного времени и сохранения учебной записи.
+                  Результат разговора отделён от неподтверждённых намерений
+                  клиента.
+                </p>
+                <p>
+                  <strong>Проверка.</strong> Назовите вымышленное имя и выберите
+                  время. Нужны доступ к микрофону и поддерживаемый браузер. Это
+                  не отдельный голосовой Telegram-бот и не нативное приложение
+                  MAX.
+                </p>
+              </div>
+            </details>
+          </div>
+        </article>
+      </section>
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <figure class="portrait">
+            <img
+              src="assets/img/ruslan-about.webp"
+              alt="Руслан Зайнуллин"
+              width="720"
+              height="960"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Руслан Зайнуллин / ИИ-автоматизация</figcaption>
+          </figure>
+          <div class="about-copy">
+            <p class="eyebrow accent">Обо мне / 02</p>
+            <h2 id="about-title">Сценарий, код<br />и интеграции.</h2>
+            <p>
+              Связываю ИИ с конкретной работой: ответить по документу, уточнить
+              запрос, собрать анкету, сохранить запись.
+            </p>
+            <p>
+              Проектирую логику, пишу код, подключаю сервисы и проверяю не
+              только удачный путь, но и ошибки. В демо показываю, что уже
+              работает и где остаются ограничения.
+            </p>
+            <div id="services" class="skills">
+              <span>Python · FastAPI</span><span>n8n · API</span
+              ><span>LLM · RAG</span><span>Telegram · CRM</span>
+            </div>
+            <div id="process" class="about-links">
+              <a
+                class="text-link"
+                href="https://github.com/ruslan-automation"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Код и проекты на GitHub
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons/lucide.svg#arrow-up-right" /></svg
+              ></a>
+              <p>Открыт к работе в команде и проектному сотрудничеству.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact" class="contact">
+      <div class="container">
+        <div class="contact-top">
+          <div>
+            <p class="eyebrow">Контакт / 03</p>
+            <h2>Обсудим вашу задачу<span>.</span></h2>
+            <p>Автоматизация процесса, интеграция<br />или работа в команде.</p>
+          </div>
+          <a
+            class="button button-light"
+            href="https://t.me/RuslanFZ"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Написать Руслану
+            <svg class="icon" aria-hidden="true">
+              <use href="assets/icons/lucide.svg#arrow-up-right" /></svg
+          ></a>
+        </div>
+        <div class="contact-bottom">
+          <span>Руслан Зайнуллин © 2026</span
+          ><a href="mailto:rzaynullin108@gmail.com">rzaynullin108@gmail.com</a
+          ><a class="text-link" href="#hero"
+            >Наверх
+            <svg class="icon up-arrow" aria-hidden="true">
+              <use href="assets/icons/lucide.svg#arrow-down" /></svg
+          ></a>
+        </div>
       </div>
-      <ol class="process-list">
-      <li class="step reveal" style="--i:0">
-        <span class="step-num">01</span>
-        <div class="step-body">
-          <h3 class="step-title">Брифинг и аудит</h3>
-          <span class="step-meta">30–60 мин</span>
-          <p class="step-text">Разбираем процесс, инструменты и точки потерь. На выходе — диагностика, список интеграций и предварительная оценка работ.</p>
-        </div>
-      </li>
-      <li class="step reveal" style="--i:1">
-        <span class="step-num">02</span>
-        <div class="step-body">
-          <h3 class="step-title">Архитектура</h3>
-          <span class="step-meta">1–3 дня</span>
-          <p class="step-text">Описываю маршрут данных, логику ИИ-агентов, обработку ошибок и сценарий на случай сбоя. Вы видите схему до начала сборки.</p>
-        </div>
-      </li>
-      <li class="step reveal" style="--i:2">
-        <span class="step-num">03</span>
-        <div class="step-body">
-          <h3 class="step-title">Сборка и тесты</h3>
-          <span class="step-meta">1–3 недели</span>
-          <p class="step-text">Собираю сценарии, подключаю CRM, Telegram, оплату, сервисы записи и расписания, голос или базу знаний. Проверяем систему на реальных данных.</p>
-        </div>
-      </li>
-      <li class="step reveal" style="--i:3">
-        <span class="step-num">04</span>
-        <div class="step-body">
-          <h3 class="step-title">Передача и поддержка</h3>
-          <span class="step-meta">1–2 дня + по запросу</span>
-          <p class="step-text">Передаю инструкции, объясняю команде, как работать с системой, и подключаю уведомления о сбоях. Дальше — развитие или поддержка по запросу.</p>
-        </div>
-      </li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT ==================================================== -->
-<section id="about" class="about">
-  <div class="container">
-    <div class="section-head reveal">
-      <h2 class="section-title">О себе</h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-copy">
-        <p class="reveal" style="--i:0">Привет! Меня зовут Руслан, ИИ-инженер по автономным бизнес-системам. Собираю маршруты, где сайт, формы, звонки, Telegram, CRM и календарь работают как один процесс: заявка не теряется, менеджер видит контекст, клиент быстрее доходит до записи или оплаты.</p>
-        <p class="reveal" style="--i:1">Моя сильная сторона — связка сценариев: n8n, Python, API, LLM/RAG, голосовые агенты, таблицы и CRM. Я проектирую логику, обработку ошибок, повторы и уведомления, чтобы автоматизация работала в реальном бизнесе, а не только на демо.</p>
-        <p class="reveal" style="--i:2">Обычно начинаю с аудита текущего процесса и быстро собираю рабочий сценарий, который можно проверить на ваших данных. Результат показываю через видео, схему маршрута и понятные точки контроля.</p>
+    </footer>
+    <dialog
+      id="film-dialog"
+      class="film-dialog"
+      aria-labelledby="film-dialog-title"
+    >
+      <div class="film-dialog-bar">
+        <h2 id="film-dialog-title">Заявка, которую почти потеряли</h2>
+        <button
+          id="film-close"
+          class="icon-button"
+          aria-label="Закрыть ролик"
+          title="Закрыть ролик"
+          type="button"
+        >
+          <svg class="icon" aria-hidden="true">
+            <use href="assets/icons/lucide.svg#x" />
+          </svg>
+        </button>
       </div>
-      <figure class="about-photo reveal" style="--i:1">
-        <img src="assets/img/ruslan-about.webp" alt="Руслан Зайнуллин" loading="lazy" decoding="async" />
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES ================================================= -->
-<section id="services" class="services">
-  <div class="container">
-    <div class="section-head services-head reveal">
-      <h2 class="section-title services-title">Услуги</h2>
-    </div>
-    <div class="services-body">
-      <p class="services-intro reveal">
-        Собираю агентов и автоматизации под реальные процессы бизнеса: от приёма заявок и онлайн-записи до RAG-баз знаний и голосовых ассистентов. Связываю Bitrix24, amoCRM, YCLIENTS, ЮKassa, Telegram и Google Workspace в сквозной маршрут — чтобы заявка превращалась в сделку без потерь и ручных пересылок.
-      </p>
-      <ol class="services-grid">
-        <li class="service reveal" style="--i:0">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11Z"/></svg>
-          </span>
-          <h3>Заявки и лиды → CRM</h3>
-          <p>Формы, Telegram, сайт и звонки попадают в одно место — Bitrix24, amoCRM, таблицу или менеджеру в чат. Сделка создаётся с контактом, услугой и суммой автоматически — без ручного переноса между системами.</p>
-        </li>
-        <li class="service reveal" style="--i:1">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
-          </span>
-          <h3>Запись и календарь</h3>
-          <p>Проверка свободных слотов в YCLIENTS или Google Calendar, выбор услуги, подтверждения, переносы и напоминания — в одном сценарии. По запросу подключаю предоплату через ЮKassa, чтобы запись фиксировалась только после оплаты.</p>
-        </li>
-        <li class="service reveal" style="--i:2">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
-          </span>
-          <h3>Голос и боты</h3>
-          <p>Голосовые агенты на Vapi и ElevenLabs, Telegram-боты, Mini Apps и квизы — приём, квалификация и передача итога в систему. Под капотом OpenAI, Claude, Gemini и Whisper для распознавания речи, оркестрация на FastAPI и n8n.</p>
-        </li>
-        <li class="service reveal" style="--i:3">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2Z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7Z"/></svg>
-          </span>
-          <h3>Базы знаний RAG</h3>
-          <p>Ответы по документам с источниками — для сотрудников, клиентов, регламентов и внутренних знаний. Парсинг материалов, эмбеддинги в Qdrant или Pinecone, выдача с ссылкой на исходник — всё доступно в Telegram-боте, виджете на сайте или Mini App.</p>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- FOOTER =================================================== -->
-<div class="footer-reveal-stage" data-footer-reveal>
-<footer id="contact" class="site-footer">
-  <h2 class="footer-marquee" aria-label="Обсудим автоматизацию">
-    <div class="footer-marquee-track" aria-hidden="false">
-      <span class="footer-marquee-item">Обсудим автоматизацию&nbsp;</span>
-      <span class="footer-marquee-item">Обсудим автоматизацию&nbsp;</span>
-      <span class="footer-marquee-item">Обсудим автоматизацию&nbsp;</span>
-      <span class="footer-marquee-item">Обсудим автоматизацию&nbsp;</span>
-    </div>
-    <div class="footer-marquee-track" aria-hidden="true">
-      <span class="footer-marquee-item">Обсудим автоматизацию&nbsp;</span>
-      <span class="footer-marquee-item">Обсудим автоматизацию&nbsp;</span>
-      <span class="footer-marquee-item">Обсудим автоматизацию&nbsp;</span>
-      <span class="footer-marquee-item">Обсудим автоматизацию&nbsp;</span>
-    </div>
-  </h2>
-
-  <div class="container footer-container">
-    <div class="footer-cols">
-      <ul class="footer-socials" aria-label="Контакты">
-        <li>
-          <a href="https://t.me/RuslanFZ" target="_blank" rel="noopener">
-            <span class="footer-soc-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 4.5 2.5 11.5l5 2 2 6 3-4 5 4 4-15Z"/><path d="m7.5 13.5 9-7-6 8"/></svg>
-            </span>
-            <span class="footer-soc-label">Telegram</span>
-            <span class="footer-soc-arrow" aria-hidden="true">↗</span>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:rzaynullin108@gmail.com">
-            <span class="footer-soc-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></svg>
-            </span>
-            <span class="footer-soc-label">rzaynullin108@gmail.com</span>
-            <span class="footer-soc-arrow" aria-hidden="true">↗</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/ruslan-automation" target="_blank" rel="noopener">
-            <span class="footer-soc-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5a4.6 4.6 0 0 0-1-3.5 4.3 4.3 0 0 0-.1-3.5s-1.1-.4-3.5 1.4a12.3 12.3 0 0 0-6.4 0C6.6 1.6 5.5 2 5.5 2a4.3 4.3 0 0 0-.1 3.5A4.6 4.6 0 0 0 4.4 9c0 3.5 3 5.5 6 5.5a4.8 4.8 0 0 0-1 3.5v4"/><path d="M9 18c-4.5 2-5-2-7-2"/></svg>
-            </span>
-            <span class="footer-soc-label">GitHub</span>
-            <span class="footer-soc-arrow" aria-hidden="true">↗</span>
-          </a>
-        </li>
-      </ul>
-
-      <p class="footer-pitch">
-        Опишите процесс и текущие инструменты. В течение 24 часов отвечу архитектурой, оценкой сроков и маршрутом автоматизации в <a class="footer-pitch-link" href="https://t.me/RuslanFZ" target="_blank" rel="noopener">Telegram.</a>
-      </p>
-    </div>
-
-    <div class="footer-baseline">
-      <span class="footer-brand">RUSLAN ZAYNULLIN · 2026</span>
-      <a href="#hero" class="back-top" data-back-top>↑ Наверх</a>
-    </div>
-  </div>
-</footer>
-</div>
-
-<!-- MODAL ==================================================== -->
-<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true" hidden>
-  <div class="modal-card" role="document">
-    <button class="modal-close" type="button" aria-label="Закрыть кейс">✕</button>
-    <div class="modal-body" id="modalBody"></div>
-  </div>
-</div>
-
-<script type="module" src="assets/js/motion.js?v=portfolio-media-20260729"></script>
-<script type="module" src="assets/js/cases.js?v=portfolio-media-20260729"></script>
-</body>
+      <video
+        id="full-film"
+        controls
+        playsinline
+        preload="none"
+        poster="assets/img/clinic-film-poster.webp"
+        aria-label="Полный демонстрационный ролик об обработке заявки"
+      >
+        <track
+          kind="captions"
+          src="media/clinic-lead-ru.vtt"
+          srclang="ru"
+          label="Русские титры"
+        />
+      </video>
+      <p>Постановочный ролик. Работающие демо представлены в проектах ниже.</p>
+      <details class="film-transcript">
+        <summary>Сценарий ролика текстом</summary>
+        <p>
+          Клиентка отправляет заявку с телефона. Администратор клиники занят
+          другой посетительницей, а рядом появляется уведомление о новой заявке.
+          Обращение проходит через Telegram, ИИ, Bitrix24 и календарь. Затем
+          клиентка приходит в клинику: запись сохранена, администратор её
+          встречает.
+        </p>
+        <p>
+          Финальная надпись: «Пока администратор занята, ИИ отвечает и
+          записывает». Звуковое сопровождение: музыка и короткие эффекты
+          уведомлений.
+        </p>
+      </details>
+    </dialog>
+    <script src="assets/js/portfolio.js?v=20260923-1" defer></script>
+  </body>
 </html>
