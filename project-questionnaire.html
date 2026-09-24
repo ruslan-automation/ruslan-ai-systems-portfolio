@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Анкета для заказа кухни | Руслан Зайнуллин</title>
+  <meta name="description" content="Кнопочный сценарий в Telegram на n8n: четыре вопроса, итог обращения, фотографии и видеокружок. Задача, реализация и доступное демо." />
+  <link rel="canonical" href="https://ruslanzaynullin.ru/project-questionnaire.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/asterisk.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/portfolio.css?v=20260924-1" />
+  <link rel="stylesheet" href="assets/css/project.css?v=20260924-1" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="detail-header container">
+    <a href="index.html">Руслан Зайнуллин</a>
+    <a class="text-link" href="index.html#works">Все проекты <svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-up-right" /></svg></a>
+  </header>
+  <main id="main" class="detail-main container">
+    <h1>Анкета для заказа кухни</h1>
+    <p class="detail-summary">Четыре вопроса с готовыми вариантами ответа. Пожелания к кухне собраны в одном сообщении.</p>
+    <div class="detail-actions">
+      <a class="channel-link" href="https://t.me/Kitchendemobot?start=quiz" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#send" /></svg>Открыть в Telegram <svg class="icon small-icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-up-right" /></svg></a>
+    </div>
+    <dl class="detail-facts">
+      <div><dt>Формат</dt><dd>Кнопочная анкета</dd></div>
+      <div><dt>Технологии</dt><dd>n8n · Telegram Bot API</dd></div>
+      <div><dt>Моя работа</dt><dd>Логика шагов и итог обращения</dd></div>
+    </dl>
+    <div class="detail-columns">
+      <section class="detail-section">
+        <h2>Задача</h2>
+        <p>Собрать одинаковый набор данных у каждого обратившегося. Сценарий подходит для первичной анкеты, когда важны предсказуемый путь и понятный итог.</p>
+      </section>
+      <section class="detail-section">
+        <h2>Что сделал</h2>
+        <ul>
+          <li>Собрал последовательность вопросов и обработку кнопок в n8n.</li>
+          <li>Добавил возврат к предыдущим шагам и итог по выбранным ответам.</li>
+          <li>Подключил фотографии и видеокружок; вынес демо в отдельный сценарий.</li>
+        </ul>
+      </section>
+    </div>
+    <section class="detail-section">
+      <h2>Как устроено</h2>
+      <ol class="flow">
+        <li><strong>Запуск</strong>Пользователь открывает отдельного Telegram-бота.</li>
+        <li><strong>Вопросы</strong>Выбирает варианты кнопками.</li>
+        <li><strong>Состояние</strong>n8n сохраняет ответы и управляет шагами.</li>
+        <li><strong>Итог</strong>Бот собирает пожелания в одно сообщение.</li>
+      </ol>
+    </section>
+    <section class="detail-section">
+      <h2>Пример итога</h2>
+      <dl class="example-result">
+        <div><dt>Планировка</dt><dd>Угловая</dd></div>
+        <div><dt>Размер</dt><dd>3–5 м</dd></div>
+        <div><dt>Бюджет</dt><dd>150–300 тыс. рублей</dd></div>
+        <div><dt>Готовность</dt><dd>Идёт ремонт</dd></div>
+      </dl>
+    </section>
+    <section class="detail-section detail-note">
+      <h2>О демо</h2>
+      <p>Демо проходит в тестовом режиме и завершается итогом анкеты. Указанные в видеокружке 15 минут относятся к исходному сценарию.</p>
+    </section>
+  </main>
+  <footer class="detail-footer container">
+    <a class="text-link" href="index.html#works">Все проекты</a>
+    <a class="text-link primary-link" href="https://t.me/RuslanFZ" target="_blank" rel="noopener noreferrer">Обсудить похожую задачу <svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-up-right" /></svg></a>
+  </footer>
+</body>
+</html>

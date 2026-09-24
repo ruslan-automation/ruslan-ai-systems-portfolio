@@ -1,7 +1,7 @@
 (() => {
-  const video = document.querySelector("#hero-video");
-  const pauseButton = document.querySelector("#hero-pause");
-  const soundButton = document.querySelector("#hero-sound");
+  const video = document.querySelector("#story-video");
+  const pauseButton = document.querySelector("#film-pause");
+  const soundButton = document.querySelector("#film-sound");
   const dialog = document.querySelector("#film-dialog");
   const fullFilm = document.querySelector("#full-film");
   const filmOpen = document.querySelector(".film-open");
@@ -9,7 +9,7 @@
   const filmUrl = "media/clinic-lead-film.mp4";
   let userPaused = false;
   let explicitPlayback = false;
-  let inView = true;
+  let inView = false;
   let resumeAfterDialog = false;
 
   const icon = (button, name, label) => {
@@ -19,7 +19,7 @@
     button.setAttribute("aria-label", label);
     button.title = label;
   };
-  const playHero = () => {
+  const playInline = () => {
     if (!video.getAttribute("src")) video.src = filmUrl;
     return video.play().catch(() => {});
   };
@@ -39,16 +39,11 @@
   video.addEventListener("pause", updatePlayback);
   video.addEventListener("ended", updatePlayback);
   video.addEventListener("error", updatePlayback);
-  // Keep the embedded end titles in the full film, clear of the hero heading.
-  video.addEventListener("timeupdate", () => {
-    video.classList.toggle("is-loop-ending", video.currentTime >= 15.2);
-    if (video.currentTime >= 15.9) video.currentTime = 0;
-  });
   pauseButton.addEventListener("click", () => {
     if (video.paused) {
       userPaused = false;
       explicitPlayback = true;
-      playHero();
+      playInline();
     } else {
       userPaused = true;
       video.pause();
@@ -69,11 +64,11 @@
       !userPaused &&
       (explicitPlayback || (!motion.matches && !navigator.connection?.saveData))
     )
-      playHero();
+      playInline();
   };
   new IntersectionObserver(
     ([entry]) => {
-      inView = entry.isIntersecting;
+      inView = entry.isIntersecting && entry.intersectionRatio >= 0.1;
       reconcilePlayback();
     },
     { threshold: 0.1 },
@@ -118,6 +113,7 @@
 
   const menuButton = document.querySelector(".menu-toggle");
   const mobileNav = document.querySelector("#mobile-nav");
+  document.querySelector(".site-header").dataset.enhanced = "true";
   const closeMenu = () => {
     mobileNav.hidden = true;
     menuButton.setAttribute("aria-expanded", "false");
@@ -146,4 +142,93 @@
   matchMedia("(min-width:641px)").addEventListener("change", (event) => {
     if (event.matches) closeMenu();
   });
+
+  const revealTargets = [...document.querySelectorAll("[data-reveal]")];
+  if (!motion.matches) {
+    const reveal = (element) => {
+      element.classList.add("is-visible");
+      revealObserver.unobserve(element);
+    };
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) reveal(entry.target);
+        });
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -24px 0px" },
+    );
+    revealTargets.forEach((element) => {
+      element.style.setProperty(
+        "--reveal-delay",
+        `${element.dataset.delay || 0}ms`,
+      );
+      element.classList.add("reveal-pending");
+    });
+    requestAnimationFrame(() => {
+      revealTargets.forEach((element) => revealObserver.observe(element));
+    });
+    document.addEventListener("focusin", (event) => {
+      const target = event.target.closest(".reveal-pending");
+      if (target) reveal(target);
+    });
+    motion.addEventListener("change", () => {
+      if (motion.matches) {
+        revealObserver.disconnect();
+        revealTargets.forEach((element) =>
+          element.classList.remove("reveal-pending"),
+        );
+      }
+    });
+  }
+
+  const process = document.querySelector("#process");
+  const steps = [...process.querySelectorAll("li")];
+  const contact = document.querySelector("#contact");
+  let processInView = false;
+  let contactInView = false;
+  let stepIndex = 0;
+  let stepTimer = null;
+  const showStep = () => {
+    steps.forEach((step, index) => {
+      step.classList.toggle("is-active", index === stepIndex);
+      step.classList.toggle("is-complete", index < stepIndex);
+    });
+  };
+  const reconcileMotion = () => {
+    const enabled = !motion.matches && !document.hidden && !dialog.open;
+    contact.classList.toggle("is-moving", enabled && contactInView);
+    if (enabled && processInView && stepIndex < steps.length - 1) {
+      if (stepTimer === null) {
+        stepTimer = setInterval(() => {
+          stepIndex += 1;
+          showStep();
+          if (stepIndex === steps.length - 1) {
+            clearInterval(stepTimer);
+            stepTimer = null;
+          }
+        }, 1400);
+      }
+    } else {
+      clearInterval(stepTimer);
+      stepTimer = null;
+    }
+  };
+  showStep();
+  const motionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.target === process) processInView = entry.isIntersecting;
+        if (entry.target === contact) contactInView = entry.isIntersecting;
+      });
+      reconcileMotion();
+    },
+    { threshold: 0.15 },
+  );
+  motionObserver.observe(process);
+  motionObserver.observe(contact);
+  document.addEventListener("visibilitychange", reconcileMotion);
+  motion.addEventListener("change", reconcileMotion);
+  filmOpen.addEventListener("click", reconcileMotion);
+  dialog.addEventListener("close", reconcileMotion);
+  reconcileMotion();
 })();
