@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Bohemia — тестовый чат</title>
+  <style>
+    @font-face { font-family: Manrope; src: url('/assets/fonts/manrope-cyrillic.woff2') format('woff2'); font-weight: 200 800; font-display: swap; }
+    @font-face { font-family: Manrope; src: url('/assets/fonts/manrope-latin.woff2') format('woff2'); font-weight: 200 800; font-display: swap; unicode-range: U+0000-00FF; }
+    :root { color-scheme: dark; font-family: Manrope, sans-serif; color: #e9efed; background: #101a18; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; padding: clamp(24px, 5vw, 72px); }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid #3b4b46; }
+    .brand { font-size: 20px; font-weight: 700; letter-spacing: .08em; }
+    .label { font-size: 12px; color: #9caeaa; }
+    main { max-width: 600px; margin-top: clamp(56px, 10vh, 120px); padding-bottom: 120px; }
+    h1 { font-size: clamp(28px, 4vw, 46px); font-weight: 600; line-height: 1.2; letter-spacing: -.035em; margin: 0 0 24px; }
+    p { font-size: 16px; line-height: 1.65; color: #b7c8c2; margin: 0 0 24px; }
+    .instruction { color: #72d5c6; }
+    .notice { padding-top: 24px; border-top: 1px solid #3b4b46; font-size: 13px; }
+    @media (max-width: 480px) { header { align-items: flex-start; } main { margin-top: 56px; } }
+  </style>
+</head>
+<body>
+  <header><span class="brand">BOHEMIA</span><span class="label">Тестовый контур</span></header>
+  <main>
+    <h1>Проверка чата<br>и передачи менеджеру</h1>
+    <p class="instruction">Откройте чат в правом нижнем углу.</p>
+    <p>Связь со штатным OnChat пока проверяется. Если ответ не появился, это не подтверждает работу бота или передачи менеджеру.</p>
+    <p class="notice">Это тестовая страница, не магазин. Заказы здесь не оформляются. Используйте только вымышленные имена и контактные данные.</p>
+  </main>
+  <!-- Standard ChatRex OnChat embed. Public widget identifiers are not API credentials.
+       Source: https://docs.chatrex.pro/integrations/channels/online-chat/ -->
+  <script>
+    window.ChatRexConfig = {
+      "integration_id": 8002,
+      "user_id": 2337,
+      "primary_color": "#3bc7c0",
+      "rounding_corners": 6,
+      "title": "Bohemia — тестовый чат",
+      "title_two": "",
+      "subtitle": "Проверка бота и передачи менеджеру",
+      "welcome_message_enabled": false,
+      "welcome_message": "",
+      "typing_effect_while_waiting_message": true,
+      "show_status": true,
+      "locale": "ru",
+      "widget_width": 360,
+      "widget_height": 560,
+      "message_font_size": 14,
+      "heading_font_size": 16,
+      "font_family": "inter"
+    };
+  </script>
+  <script type="module" src="https://app.chatrex.pro/chatrex-widget.js"></script>
+</body>
+</html>
