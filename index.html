@@ -34,6 +34,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/portfolio.css?v=20260924-3" />
+    <link rel="stylesheet" href="assets/css/knowledge-film.css?v=20261003-3" />
+    <script src="assets/js/knowledge-film.js?v=20261003-3" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -222,30 +224,39 @@
             class="project"
             id="knowledge"
             data-demo="knowledge"
+            data-knowledge-preview
             data-reveal
           >
             <a
               class="project-link"
               href="project-knowledge.html"
             >
-              <div class="project-cover">
-                <img
-                  src="assets/img/demo-interface-knowledge.png"
-                  alt=""
-                  width="656"
-                  height="380"
-                  loading="lazy"
-                  decoding="async"
-                />
+              <div class="project-cover project-cover--film">
+                <video
+                  id="knowledge-preview"
+                  data-src="media/knowledge-teaser-v1.mp4"
+                  poster="assets/img/knowledge-teaser-poster.webp"
+                  width="960"
+                  height="600"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  aria-label="Превью: документ, вопрос и ответ с источником"
+                ></video>
               </div>
               <h3>Ответы по документам</h3>
               <span class="project-action"><span>Открыть проект</span><svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-down" /></svg></span>
             </a>
+            <button class="knowledge-preview-toggle" type="button" aria-label="Воспроизвести превью" title="Воспроизвести превью" hidden>
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#play" /></svg>
+            </button>
           </article>
           <article
             class="project"
             id="consultant"
             data-demo="consultant"
+            data-project-preview
             data-reveal
             data-delay="90"
           >
@@ -253,24 +264,32 @@
               class="project-link"
               href="project-consultant.html"
             >
-              <div class="project-cover">
-                <img
-                  src="assets/img/demo-interface-consultant.png"
-                  alt=""
-                  width="508"
-                  height="235"
-                  loading="lazy"
-                  decoding="async"
-                />
+              <div class="project-cover project-cover--film">
+                <video
+                  id="consultant-preview"
+                  data-src="media/consultant-teaser-v2.mp4"
+                  poster="assets/img/consultant-teaser-poster-v2.webp"
+                  width="960"
+                  height="600"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  aria-label="Превью: консультант уточняет тип холодильника, обновляет бюджет и сохраняет пожелания к кухне"
+                ></video>
               </div>
               <h3>ИИ-консультант по кухне</h3>
               <span class="project-action"><span>Открыть проект</span><svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-down" /></svg></span>
             </a>
+            <button class="knowledge-preview-toggle" type="button" aria-label="Воспроизвести превью" title="Воспроизвести превью" hidden>
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#play" /></svg>
+            </button>
           </article>
           <article
             class="project"
             id="quiz"
             data-demo="quiz"
+            data-project-preview
             data-reveal
             data-delay="180"
           >
@@ -278,24 +297,32 @@
               class="project-link"
               href="project-questionnaire.html"
             >
-              <div class="project-cover">
-                <img
-                  src="assets/img/demo-interface-questionnaire.png"
-                  alt=""
-                  width="435"
-                  height="129"
-                  loading="lazy"
-                  decoding="async"
-                />
+              <div class="project-cover project-cover--film">
+                <video
+                  id="questionnaire-preview"
+                  data-src="media/questionnaire-teaser-v2.mp4"
+                  poster="assets/img/questionnaire-teaser-poster-v2.webp"
+                  width="960"
+                  height="600"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  aria-label="Превью: выбор планировки кухни и итог анкеты"
+                ></video>
               </div>
               <h3>Анкета для заказа кухни</h3>
               <span class="project-action"><span>Открыть проект</span><svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-down" /></svg></span>
             </a>
+            <button class="knowledge-preview-toggle" type="button" aria-label="Воспроизвести превью" title="Воспроизвести превью" hidden>
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#play" /></svg>
+            </button>
           </article>
           <article
             class="project"
             id="voice"
             data-demo="voice"
+            data-project-preview
             data-reveal
             data-delay="270"
           >
@@ -303,19 +330,26 @@
               class="project-link"
               href="project-voice.html"
             >
-              <div class="project-cover">
-                <img
-                  src="assets/img/demo-interface-voice.png"
-                  alt=""
-                  width="700"
-                  height="266"
-                  loading="lazy"
-                  decoding="async"
-                />
+              <div class="project-cover project-cover--film">
+                <video
+                  id="voice-preview"
+                  data-src="media/voice-teaser-v1.mp4"
+                  poster="assets/img/voice-teaser-poster-v1.webp"
+                  width="960"
+                  height="600"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  aria-label="Превью: голосовой администратор уточняет время и подтверждает запись"
+                ></video>
               </div>
               <h3>Голосовой администратор</h3>
               <span class="project-action"><span>Открыть проект</span><svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-down" /></svg></span>
             </a>
+            <button class="knowledge-preview-toggle" type="button" aria-label="Воспроизвести превью" title="Воспроизвести превью" hidden>
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#play" /></svg>
+            </button>
           </article>
         </div>
       </section>
