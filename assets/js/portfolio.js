@@ -6,7 +6,16 @@
   const fullFilm = document.querySelector("#full-film");
   const filmOpen = document.querySelector(".film-open");
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
-  const filmUrl = "media/clinic-lead-film.mp4";
+  const portraitFilm = matchMedia("(max-width: 640px)").matches;
+  const filmUrl = portraitFilm
+    ? "media/hero-bitrix-9x16-v4.mp4"
+    : "media/hero-bitrix-16x9-v4.mp4";
+  for (const player of [video, fullFilm]) {
+    player.poster = portraitFilm
+      ? "assets/img/hero-bitrix-portrait-v4.webp"
+      : "assets/img/hero-bitrix-landscape-v4.webp";
+    player.style.aspectRatio = portraitFilm ? "9 / 16" : "16 / 9";
+  }
   let userPaused = false;
   let explicitPlayback = false;
   let inView = false;

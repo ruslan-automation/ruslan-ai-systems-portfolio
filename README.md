@@ -14,14 +14,20 @@ The September 23, 2026 homepage release uses plain HTML, CSS and JavaScript:
 - `index.html`: four featured demos, contact details and accessible film dialog.
 - `assets/css/portfolio.css`: responsive neutral/blue design and local Manrope.
 - `assets/js/portfolio.js`: navigation and video controls; no external runtime dependencies.
-- `media/clinic-lead-film.mp4`: the complete existing film with audio and end titles.
-- `media/clinic-lead-ru.vtt`: optional Russian descriptive captions.
+- `media/hero-bitrix-16x9-v4.mp4`: 32-second main film for desktop, with music.
+- `media/hero-bitrix-9x16-v4.mp4`: separately composed portrait film for widths up to 640px.
+- `media/hero-bitrix-ru-v4.vtt`: optional Russian descriptive captions.
 - `assets/licenses/`: licenses for Manrope and the vendored Lucide icons.
 
 The hero plays silently by default, stops outside the viewport, and respects
-reduced-motion and data-saving preferences. It loops before the embedded end
-titles to keep them clear of the homepage heading. The dialog plays the complete
-film and includes a text alternative. Browser autoplay policies may require a tap.
+reduced-motion and data-saving preferences. It loops the complete film.
+The format is selected when the page opens; rotating a phone does not interrupt
+playback or load another video. The dialog plays the same complete film and
+includes a text alternative. Browser autoplay policies may require a tap.
+The former clinic film, poster and captions are retained for old links and rollback.
+
+The October 4, 2026 update changes only the main film, its poster, descriptive
+captions and matching text. The four demo films and their pages are unchanged.
 
 ## Exactly Four Featured Demos
 
