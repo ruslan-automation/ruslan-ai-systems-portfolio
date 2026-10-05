@@ -27,15 +27,11 @@
     <meta property="og:locale" content="ru_RU" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="assets/img/asterisk.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/portfolio.css?v=20260924-3" />
+    <link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/portfolio.css?v=20261004-design-4" />
     <link rel="stylesheet" href="assets/css/knowledge-film.css?v=20261003-3" />
-    <script src="assets/js/knowledge-film.js?v=20261003-3" defer></script>
+    <script src="assets/js/knowledge-film.js?v=20261004-lofi-1" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -68,10 +64,11 @@
         <a class="mobile-brand" href="#top" aria-label="Руслан Зайнуллин. К началу страницы">RZ</a>
         <nav class="navigation" aria-label="Основная навигация">
           <a href="#works">Проекты</a>
-          <a href="#film">Видео</a>
-          <a href="#about">О себе</a>
-          <a href="#contact">Контакт</a>
+          <a href="#experience">Опыт</a>
+          <a href="resume.html">Резюме</a>
+          <a href="#contact">Контакты</a>
         </nav>
+        <a class="mobile-resume text-link" href="resume.html">Резюме<svg class="icon small-icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-up-right" /></svg></a>
         <button
           class="icon-button menu-toggle"
           type="button"
@@ -93,9 +90,9 @@
         hidden
       >
         <a href="#works">Проекты</a>
-        <a href="#film">Видео</a>
-        <a href="#about">О себе</a>
-        <a href="#contact">Контакт</a>
+        <a href="#experience">Опыт</a>
+        <a href="resume.html">Резюме</a>
+        <a href="#contact">Контакты</a>
       </nav>
     </header>
     <main id="main">
@@ -106,11 +103,45 @@
             Разработчик ИИ-ассистентов и CRM-интеграций
           </p>
           <p class="hero-description" data-reveal data-delay="140">
-            Создаю ассистентов для продаж и поддержки. Связываю мессенджеры,
-            базы знаний и CRM.
+            <span>Создаю ассистентов для продаж и поддержки.</span>
+            <span>Связываю мессенджеры, базы знаний и CRM.</span>
           </p>
+          <div class="hero-actions" data-reveal data-delay="180">
+            <a class="text-link hero-projects" href="#works">Смотреть проекты<svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-down" /></svg></a>
+            <a class="text-link" href="resume.html">Резюме<svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-up-right" /></svg></a>
+          </div>
         </div>
       </section>
+      <section id="about" class="about container" aria-labelledby="about-title">
+        <div class="about-grid">
+          <div class="about-copy" data-reveal>
+            <h2 id="about-title">О себе и работе</h2>
+            <p>
+              Проектирую диалоги, готовлю базы знаний и настраиваю интеграции.
+              Довожу сценарий от задачи до тестирования и сопровождения.
+            </p>
+            <p>
+              После запуска разбираю обращения и журналы действий,
+              воспроизвожу ошибки на тестовой версии и проверяю исправления.
+            </p>
+            <ul id="services" class="skills" aria-label="Технологии">
+              <li>Python / FastAPI</li><li>n8n / REST API</li>
+              <li>Битрикс24 / amoCRM</li><li>RAG</li>
+            </ul>
+            <div class="about-links">
+              <a class="text-link" href="https://github.com/ruslan-automation" target="_blank" rel="noopener noreferrer">
+                GitHub
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-up-right" /></svg>
+              </a>
+              <p>Подключаюсь к задачам команд и агентств. Документирую изменения и передаю результат.</p>
+            </div>
+          </div>
+          <figure class="portrait" data-reveal data-delay="100">
+            <img src="assets/img/ruslan-about.webp" alt="Руслан Зайнуллин" width="1200" height="2150" decoding="async" />
+          </figure>
+        </div>
+      </section>
+
       <section
         id="film"
         class="film-section container"
@@ -135,6 +166,7 @@
         </video>
         <div class="film-toolbar">
           <p>От сообщения к действию.</p>
+          <a class="text-link film-projects-link" href="#works">К проектам<svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-down" /></svg></a>
           <div class="film-controls" hidden>
             <button
               class="icon-button"
@@ -172,11 +204,71 @@
             </button>
           </div>
           <noscript
-            ><a class="text-link" href="media/hero-bitrix-16x9-v4.mp4"
+            ><a class="text-link" href="media/hero-bitrix-16x9-v7.mp4"
               >Смотреть ролик</a
             ></noscript
           >
         </div>
+        <p class="music-credit">Музыка: <a href="https://www.free-stock-music.com/fsm-team-escp-downtown-walk.html" target="_blank" rel="noopener noreferrer">Downtown Walk</a> · <a href="https://www.escp.space" target="_blank" rel="noopener noreferrer">| e s c p | / FSM Team</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> · фрагмент, монтаж.</p>
+      </section>
+
+      <section id="experience" class="experience container" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <h2 id="experience-title" data-reveal>Опыт в проектах</h2>
+        </div>
+        <div class="experience-grid">
+          <article data-reveal>
+            <p class="experience-kicker">ИИ-консультант · CRM</p>
+            <h3>Образовательный центр</h3>
+            <p>Настраивал сценарии консультации, базу знаний и обмен данными
+              с CRM.</p>
+            <p class="experience-check"><span>Моя ответственность</span><strong>Проверка ответов
+              и передачи обращения администратору.</strong></p>
+            <p class="experience-tools">База знаний · CRM · Сопровождение</p>
+          </article>
+          <article data-reveal data-delay="80">
+            <p class="experience-kicker">Товарные консультации · Каталог</p>
+            <h3>Магазин техники</h3>
+            <p>Дорабатывал товарные консультации и действия помощника.
+              Проверял исправления на повторяемых сценариях.</p>
+            <p class="experience-check"><span>Моя ответственность</span><strong>Соответствие ответов каталогу
+              и сохранение пожеланий клиента.</strong></p>
+            <p class="experience-tools">Каталог · Диалоги · Тестирование</p>
+          </article>
+          <article data-reveal data-delay="160">
+            <p class="experience-kicker">ИИ-поддержка · Обращения</p>
+            <h3>Интернет-магазин</h3>
+            <p>Настраивал ответы по товарам, доставке и заказам.
+              Улучшал сценарии по результатам разбора обращений.</p>
+            <p class="experience-check"><span>Моя ответственность</span><strong>Проверка данных заказа
+              и передачи сложных вопросов сотруднику.</strong></p>
+            <p class="experience-tools">Сценарии поддержки · Проверка ответов</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="process" class="process-strip container" aria-labelledby="process-title" data-reveal>
+        <div class="section-heading">
+          <h2 id="process-title">Как я работаю</h2>
+        </div>
+        <ol>
+          <li>
+            <span class="step-number">01</span><span class="step-label">Разбираю задачу</span>
+            <p class="step-description">Уточняю процесс, данные и ожидаемый результат.</p>
+          </li>
+          <li>
+            <span class="step-number">02</span><span class="step-label">Собираю прототип</span>
+            <p class="step-description">Настраиваю диалог, базу знаний и интеграции.</p>
+          </li>
+          <li>
+            <span class="step-number">03</span><span class="step-label">Проверяю сценарии</span>
+            <p class="step-description">Тестирую ответы, действия и передачу сотруднику.</p>
+          </li>
+          <li>
+            <span class="step-number">04</span><span class="step-label">Передаю и сопровождаю</span>
+            <p class="step-description">Документирую решение и проверяю работу после запуска.</p>
+          </li>
+        </ol>
       </section>
 
       <section
@@ -234,8 +326,8 @@
               <div class="project-cover project-cover--film">
                 <video
                   id="knowledge-preview"
-                  data-src="media/knowledge-teaser-v1.mp4"
-                  poster="assets/img/knowledge-teaser-poster.webp"
+                  data-src="media/knowledge-dynamic-teaser-v1.mp4"
+                  poster="assets/img/knowledge-dynamic-teaser-v1.webp"
                   width="960"
                   height="600"
                   muted
@@ -246,6 +338,7 @@
                 ></video>
               </div>
               <h3>Ответы по документам</h3>
+              <p class="project-summary">Находит ответ в документе и показывает источник.</p>
               <span class="project-action"><span>Открыть проект</span><svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-down" /></svg></span>
             </a>
             <button class="knowledge-preview-toggle" type="button" aria-label="Воспроизвести превью" title="Воспроизвести превью" hidden>
@@ -279,6 +372,7 @@
                 ></video>
               </div>
               <h3>ИИ-консультант по кухне</h3>
+              <p class="project-summary">Уточняет пожелания и сохраняет контекст при смене бюджета.</p>
               <span class="project-action"><span>Открыть проект</span><svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-down" /></svg></span>
             </a>
             <button class="knowledge-preview-toggle" type="button" aria-label="Воспроизвести превью" title="Воспроизвести превью" hidden>
@@ -291,7 +385,7 @@
             data-demo="quiz"
             data-project-preview
             data-reveal
-            data-delay="180"
+            data-delay="0"
           >
             <a
               class="project-link"
@@ -312,6 +406,7 @@
                 ></video>
               </div>
               <h3>Анкета для заказа кухни</h3>
+              <p class="project-summary">Собирает параметры кухни в готовый итог для менеджера.</p>
               <span class="project-action"><span>Открыть проект</span><svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-down" /></svg></span>
             </a>
             <button class="knowledge-preview-toggle" type="button" aria-label="Воспроизвести превью" title="Воспроизвести превью" hidden>
@@ -324,7 +419,7 @@
             data-demo="voice"
             data-project-preview
             data-reveal
-            data-delay="270"
+            data-delay="90"
           >
             <a
               class="project-link"
@@ -345,6 +440,7 @@
                 ></video>
               </div>
               <h3>Голосовой администратор</h3>
+              <p class="project-summary">Уточняет время голосом и подтверждает тестовую запись.</p>
               <span class="project-action"><span>Открыть проект</span><svg class="icon" aria-hidden="true"><use href="assets/icons/lucide.svg#arrow-down" /></svg></span>
             </a>
             <button class="knowledge-preview-toggle" type="button" aria-label="Воспроизвести превью" title="Воспроизвести превью" hidden>
@@ -354,99 +450,6 @@
         </div>
       </section>
 
-      <section id="about" class="about container" aria-labelledby="about-title">
-        <div class="about-grid">
-          <div class="about-copy" data-reveal>
-            <h2 id="about-title">Опыт и навыки</h2>
-            <p>
-              Внедряю и сопровождаю ИИ-ассистентов
-              для продаж и поддержки: от разбора задачи до проверки
-              диалогов и действий в CRM после запуска.
-            </p>
-            <p>
-              Проверяю точность ответов, сохранение данных,
-              выполнение действий и передачу обращений менеджеру.
-            </p>
-            <div id="services" class="skills" aria-label="Технологии">
-              <span>Python / FastAPI</span><span>ChatRex / n8n</span
-              ><span>Битрикс24 / amoCRM</span><span>API / RAG</span>
-            </div>
-            <div class="about-links">
-              <a class="text-link primary-link" href="resume.html">
-                Резюме
-                <svg class="icon" aria-hidden="true">
-                  <use href="assets/icons/lucide.svg#arrow-up-right" />
-                </svg>
-              </a>
-              <a
-                class="text-link primary-link"
-                href="https://github.com/ruslan-automation"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub
-                <svg class="icon" aria-hidden="true">
-                  <use href="assets/icons/lucide.svg#arrow-up-right" /></svg
-              ></a>
-              <p>Открыт к работе в команде и проектному сотрудничеству.</p>
-            </div>
-          </div>
-          <figure class="portrait" data-reveal data-delay="100">
-            <img
-              src="assets/img/ruslan-about.webp"
-              alt="Руслан Зайнуллин"
-              width="1200"
-              height="2150"
-              loading="lazy"
-              decoding="async"
-            />
-          </figure>
-        </div>
-        <div class="experience-grid" aria-label="Практика в рабочих проектах">
-          <article data-reveal>
-            <h3>CRM и обращения</h3>
-            <p>Настраиваю квалификацию и передачу менеджеру. Проверяю поля,
-              стадии сделок и интеграционные действия в Битрикс24, amoCRM
-              и «Мой Класс».</p>
-          </article>
-          <article data-reveal data-delay="80">
-            <h3>Базы знаний и каталоги</h3>
-            <p>Готовлю материалы из брифов и документов, устраняю противоречия.
-              Настраиваю поиск информации в базе знаний и уточняющие вопросы.</p>
-          </article>
-          <article data-reveal data-delay="160">
-            <h3>Тесты и сопровождение</h3>
-            <p>Разбираю рабочие диалоги и журналы действий, воспроизвожу
-              ошибки на тестовом стенде. Проверяю исправления и готовлю
-              отчёты для команды и клиента.</p>
-          </article>
-        </div>
-        <div
-          id="process"
-          class="process-strip"
-          aria-labelledby="process-title"
-          data-reveal
-        >
-          <h3 id="process-title">Как я работаю</h3>
-          <ol>
-            <li>
-              <span class="step-number">01</span
-              ><span class="step-label">Разбираю задачу</span>
-            </li>
-            <li>
-              <span class="step-number">02</span
-              ><span class="step-label">Собираю прототип</span>
-            </li>
-            <li>
-              <span class="step-number">03</span
-              ><span class="step-label">Проверяю сценарии</span>
-            </li>
-            <li>
-              <span class="step-number">04</span
-              ><span class="step-label">Передаю и сопровождаю</span>
-            </li>
-          </ol>
-        </div>
-      </section>
     </main>
     <footer id="contact" class="contact">
       <h2 class="contact-marquee" aria-label="Давайте обсудим задачу">
@@ -524,6 +527,7 @@
       <p>
         Постановочный ролик. Работающие демо представлены в проектах на сайте.
       </p>
+      <p class="music-credit">Музыка: <a href="https://www.free-stock-music.com/fsm-team-escp-downtown-walk.html" target="_blank" rel="noopener noreferrer">Downtown Walk</a> · <a href="https://www.escp.space" target="_blank" rel="noopener noreferrer">| e s c p | / FSM Team</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> · фрагмент, монтаж.</p>
       <details class="film-transcript">
         <summary>Сценарий ролика текстом</summary>
         <p>
@@ -541,6 +545,6 @@
         </p>
       </details>
     </dialog>
-    <script src="assets/js/portfolio.js?v=20261004-hero-v4" defer></script>
+    <script src="assets/js/portfolio.js?v=20261004-hero-v7" defer></script>
   </body>
 </html>

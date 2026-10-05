@@ -8,8 +8,8 @@
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
   const portraitFilm = matchMedia("(max-width: 640px)").matches;
   const filmUrl = portraitFilm
-    ? "media/hero-bitrix-9x16-v4.mp4"
-    : "media/hero-bitrix-16x9-v4.mp4";
+    ? "media/hero-bitrix-9x16-v7.mp4"
+    : "media/hero-bitrix-16x9-v7.mp4";
   for (const player of [video, fullFilm]) {
     player.poster = portraitFilm
       ? "assets/img/hero-bitrix-portrait-v4.webp"

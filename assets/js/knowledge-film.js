@@ -13,7 +13,7 @@
     const video = frame.querySelector('video');
     const play = frame.querySelector(preview ? '.knowledge-preview-toggle' : '.knowledge-film-play');
     const sound = frame.querySelector('.knowledge-film-sound');
-    const fallback = preview ? null : frame.nextElementSibling;
+    const fallback = preview ? null : frame.parentElement.querySelector('.knowledge-film-error');
     let inView = false, userPaused = false, systemPause = false;
     let blocked = false, failed = false, pending = false, explicitPlayback = false;
 

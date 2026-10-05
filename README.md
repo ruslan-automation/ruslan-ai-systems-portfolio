@@ -9,15 +9,34 @@ the root of `main` in `ruslan-automation/ruslan-ai-systems-portfolio`.
 The similarly named Next.js folders and the Astro concept lab are separate
 experiments, not the deployment source for this domain.
 
-The September 23, 2026 homepage release uses plain HTML, CSS and JavaScript:
+The October 5, 2026 release publishes the approved local design using plain
+HTML, CSS and JavaScript. The homepage follows this order: introduction,
+about/skills/portrait, main film, anonymized experience, process, four demos,
+contacts. It uses locally hosted Onest with Cyrillic and two demo columns on
+desktop. Experience descriptions remain anonymized.
 
 - `index.html`: four featured demos, contact details and accessible film dialog.
-- `assets/css/portfolio.css`: responsive neutral/blue design and local Manrope.
+- `assets/css/portfolio.css`: responsive neutral/blue design and local Onest.
 - `assets/js/portfolio.js`: navigation and video controls; no external runtime dependencies.
-- `media/hero-bitrix-16x9-v4.mp4`: 32-second main film for desktop, with music.
-- `media/hero-bitrix-9x16-v4.mp4`: separately composed portrait film for widths up to 640px.
+- `media/hero-bitrix-16x9-v7.mp4`: 32-second main film for desktop, with music.
+- `media/hero-bitrix-9x16-v7.mp4`: separately composed portrait film for widths up to 640px.
 - `media/hero-bitrix-ru-v4.vtt`: optional Russian descriptive captions.
-- `assets/licenses/`: licenses for Manrope and the vendored Lucide icons.
+- `assets/licenses/`: licenses for Onest, retained Manrope, Lucide and music.
+
+Full films have five distinct lo-fi tracks with visible CC BY 4.0 credits:
+
+| Film | Current MP4 versions | Music |
+| --- | --- | --- |
+| Main | `hero-bitrix-{16x9,9x16}-v7.mp4` | Downtown Walk |
+| Documents | `knowledge-dynamic-{16x9,9x16}-v4.mp4` | Sleepwalk Television |
+| Kitchen consultant | `consultant-film-{landscape,portrait}-v6.mp4` | Rain, Book And Cup Of Tea |
+| Kitchen questionnaire | `questionnaire-film-{landscape,portrait}-v5.mp4` | Late-Night Decaf |
+| Voice administrator | `voice-film-{landscape,portrait}-v4.mp4` | Dusk Horizon |
+
+All music is by FSM Team & | e s c p |. Excerpts, modifications and sources
+are listed in `assets/licenses/video-music-lofi-20261004.md`. The voice film
+uses music and effects. Four homepage teasers remain silent. Older published
+media and case pages are retained for existing links.
 
 The hero plays silently by default, stops outside the viewport, and respects
 reduced-motion and data-saving preferences. It loops the complete film.
@@ -26,8 +45,10 @@ playback or load another video. The dialog plays the same complete film and
 includes a text alternative. Browser autoplay policies may require a tap.
 The former clinic film, poster and captions are retained for old links and rollback.
 
-The October 4, 2026 update changes only the main film, its poster, descriptive
-captions and matching text. The four demo films and their pages are unchanged.
+The October 4 release changed the main film. The October 5 release includes
+the new design, updated full demo soundtracks and the dynamic documents film.
+Source projects, private voice editions and intermediate renders are kept in
+the local editing archive. `_config.yml` excludes development files from Pages.
 
 ## Exactly Four Featured Demos
 
@@ -63,4 +84,4 @@ button. Opening the correct Telegram/MAX landing page does not by itself prove
 native mobile-app handoff or real microphone behavior on a physical phone.
 
 The last pre-refresh revision is `11db59ecf481de8e7fdc01714d6eaf5dfdeaa063`.
-Rollback should revert only the homepage release commit, not unrelated work.
+Rollback should revert only the relevant publication commit, not unrelated work.
