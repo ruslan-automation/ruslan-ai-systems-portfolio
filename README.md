@@ -2,6 +2,17 @@
 
 Live site: https://ruslanzaynullin.ru/
 
+## Experience Update (October 5, 2026)
+
+The approved experience section now has three anonymized, full-width project
+rows. Each shows the task, three action-leading work items and a verified
+result. Supporting checks use native HTML details, collapsed by default and
+usable with keyboard or pointer, including without JavaScript. The desktop
+layout has title/role on the left and readable copy on the right; mobile stacks
+the content. Every role keeps 2026 without a month. Evidence qualifiers remain
+visible in the results. Videos, resume and all other sections are unchanged.
+Previous production release: `e2ddc05`. Its full backup is in the local archive.
+
 ## Publication
 
 This repository is the source of the live GitHub Pages site. Pages publishes
@@ -55,7 +66,7 @@ The October 4 release changed the main film. The October 5 release includes
 the new design, updated full demo soundtracks and the dynamic documents film.
 The later October 5 soundtrack update publishes the user's selection, including
 the main track starting at 14 seconds. The previous release is `80fd3b3`.
-The newest October 5 release swaps the main/documents soundtracks and aligns
+The October 5 soundtrack and copy release swaps the main/documents soundtracks and aligns
 selected transitions and actions to the rhythm. It also publishes the approved
 About, experience and contact copy and the synchronized resume HTML/PDF.
 The resume period stays 2026 without a month. Its previous release is `d7ccdf5`.

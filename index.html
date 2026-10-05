@@ -29,7 +29,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/img/asterisk.svg" />
     <link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="assets/css/portfolio.css?v=20261004-design-4" />
+    <link rel="stylesheet" href="assets/css/portfolio.css?v=20261005-experience-3" />
     <link rel="stylesheet" href="assets/css/knowledge-film.css?v=20261003-3" />
     <script src="assets/js/knowledge-film.js?v=20261004-lofi-1" defer></script>
     <script type="application/ld+json">
@@ -218,33 +218,129 @@
           <h2 id="experience-title" data-reveal>Опыт в проектах</h2>
         </div>
         <div class="experience-grid">
-          <article data-reveal>
-            <p class="experience-kicker">ИИ-консультант · CRM</p>
-            <h3>Образовательный центр</h3>
-            <p>Настраивал консультационный сценарий, базу знаний и обмен данными
-              с CRM. Сопровождал работу помощника после запуска.</p>
-            <p class="experience-check"><span>Что проверял</span><strong>Точность ответов,
-              создание обращения в CRM и передачу администратору.</strong></p>
-            <p class="experience-tools">База знаний · CRM · Сопровождение</p>
+          <article class="experience-project" aria-labelledby="experience-education" data-reveal>
+            <header class="experience-summary">
+              <h3 id="experience-education">Образовательный центр</h3>
+              <p class="experience-role">Внедрение и сопровождение · <time datetime="2026">2026</time></p>
+              <p class="experience-tools">ИИ-консультант · База знаний · CRM</p>
+            </header>
+            <div class="experience-detail">
+              <div class="experience-part">
+                <h4>Задача</h4>
+                <p>Консультировать по учебным программам, расписанию и стоимости,
+                  собирать пожелания и передавать обращения администратору.</p>
+              </div>
+              <div class="experience-part">
+                <h4>Моя работа</h4>
+                <ul class="experience-work">
+                  <li><strong>Настроил консультации</strong> с подбором программы
+                    по возрасту и цели обучения. Связал сообщения в мессенджерах
+                    с действиями помощника.</li>
+                  <li><strong>Подготовил базу знаний</strong> и подключил получение
+                    актуальных сведений из CRM: групп, расписания, стоимости
+                    и преподавателей.</li>
+                  <li><strong>Доработал передачу администратору:</strong> связал её
+                    подтверждение с успешным созданием задачи. После запуска
+                    разбирал рабочие обращения и уточнял сценарии консультации.</li>
+                </ul>
+              </div>
+              <div class="experience-part experience-check">
+                <div class="experience-outcome">
+                  <h4>Проверенный результат</h4>
+                  <p><strong>В проверенных рабочих диалогах помощник использовал
+                    актуальные данные CRM и приостанавливал ответы после
+                    подключения администратора.</strong></p>
+                </div>
+                <details class="experience-verification">
+                  <summary>Как проверял</summary>
+                  <p>Сопоставлял ответы с данными CRM, проверял обработку продолжений
+                    диалога и результаты действий.</p>
+                </details>
+              </div>
+            </div>
           </article>
-          <article data-reveal data-delay="80">
-            <p class="experience-kicker">Товарные консультации · Каталог</p>
-            <h3>Магазин техники</h3>
-            <p>Разбирал рабочие диалоги и дорабатывал сценарии консультации
-              по каталогу. Для найденных ошибок готовил повторяемые тестовые
-              сценарии и проверял исправления.</p>
-            <p class="experience-check"><span>Что проверял</span><strong>Соответствие ответа каталогу,
-              сохранение пожеланий клиента и передачу обращения менеджеру.</strong></p>
-            <p class="experience-tools">Каталог · Диалоги · Тестирование</p>
+          <article class="experience-project" aria-labelledby="experience-retail" data-reveal>
+            <header class="experience-summary">
+              <h3 id="experience-retail">Магазин техники</h3>
+              <p class="experience-role">Доработка и сопровождение · <time datetime="2026">2026</time></p>
+              <p class="experience-tools">Каталог · API · CRM</p>
+            </header>
+            <div class="experience-detail">
+              <div class="experience-part">
+                <h4>Задача</h4>
+                <p>Помогать покупателю выбрать технику: уточнять комплектацию,
+                  проверять актуальные цену и наличие, собирать пожелания
+                  и передавать обращение менеджеру.</p>
+              </div>
+              <div class="experience-part">
+                <h4>Моя работа</h4>
+                <ul class="experience-work">
+                  <li><strong>Разбирал рабочие диалоги,</strong> ответы товарного API
+                    и результаты действий в CRM.</li>
+                  <li><strong>Доработал подбор товара:</strong> настроил сохранение
+                    выбранного варианта и проверку нескольких комплектаций
+                    в одном запросе.</li>
+                  <li><strong>Уточнил сценарии действий:</strong> настроил отдельную
+                    проверку памяти, цвета и других характеристик каждого товара.
+                    Дорабатывал сбор пожеланий и передачу сотруднику.</li>
+                </ul>
+              </div>
+              <div class="experience-part experience-check">
+                <div class="experience-outcome">
+                  <h4>Проверенный результат</h4>
+                  <p><strong>Контрольный сценарий подтвердил отдельную проверку
+                    комплектаций и корректную цену доступного варианта.</strong></p>
+                </div>
+                <details class="experience-verification">
+                  <summary>Как проверял</summary>
+                  <p>Для найденных ошибок готовил повторяемые сценарии и проверял
+                    исправления на тестовой версии. Передачу менеджеру оценивал
+                    по фактическому выполнению действия и результату в CRM.</p>
+                </details>
+              </div>
+            </div>
           </article>
-          <article data-reveal data-delay="160">
-            <p class="experience-kicker">ИИ-поддержка · Обращения</p>
-            <h3>Интернет-магазин</h3>
-            <p>Готовил и актуализировал базу знаний по товарам, доставке и заказам.
-              Дорабатывал сценарии поддержки по результатам разбора рабочих обращений.</p>
-            <p class="experience-check"><span>Что проверял</span><strong>Соответствие ответов
-              данным заказа и передачу сложных вопросов сотруднику.</strong></p>
-            <p class="experience-tools">Сценарии поддержки · Проверка ответов</p>
+          <article class="experience-project" aria-labelledby="experience-support" data-reveal>
+            <header class="experience-summary">
+              <h3 id="experience-support">Интернет-магазин</h3>
+              <p class="experience-role">Настройка и тестирование · <time datetime="2026">2026</time></p>
+              <p class="experience-tools">ИИ-поддержка · База знаний · CRM</p>
+            </header>
+            <div class="experience-detail">
+              <div class="experience-part">
+                <h4>Задача</h4>
+                <p>Отвечать на вопросы о товарах, оплате, доставке и заказах.
+                  Проверять принадлежность заказа перед получением его данных
+                  и передавать сложные обращения сотруднику.</p>
+              </div>
+              <div class="experience-part">
+                <h4>Моя работа</h4>
+                <ul class="experience-work">
+                  <li><strong>Подготовил базу знаний</strong> о правилах сервиса
+                    и этапах заказа, поддерживал сведения в актуальном состоянии.</li>
+                  <li><strong>Разделил сценарии поддержки:</strong> товарную
+                    консультацию, проверку статуса, доставку и самовывоз. Добавил
+                    серверную проверку принадлежности заказа перед получением
+                    его данных.</li>
+                  <li><strong>Дорабатывал ответы и передачу сотруднику:</strong>
+                    по результатам разбора обращений уточнял пояснения статусов
+                    и порядок передачи сложных вопросов.</li>
+                </ul>
+              </div>
+              <div class="experience-part experience-check">
+                <div class="experience-outcome">
+                  <h4>Проверенный результат</h4>
+                  <p><strong>В изученной выборке рабочих обращений фактическая передача
+                    сотруднику завершалась созданием задачи и доставкой уведомления.</strong></p>
+                </div>
+                <details class="experience-verification">
+                  <summary>Как проверял</summary>
+                  <p>Тестировал поиск заказа с разными сочетаниями данных и сверял
+                    ответы с результатами CRM. Контрольные сценарии подтвердили
+                    работу проверки принадлежности заказа.</p>
+                </details>
+              </div>
+            </div>
           </article>
         </div>
       </section>
