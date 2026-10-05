@@ -18,25 +18,29 @@ desktop. Experience descriptions remain anonymized.
 - `index.html`: four featured demos, contact details and accessible film dialog.
 - `assets/css/portfolio.css`: responsive neutral/blue design and local Onest.
 - `assets/js/portfolio.js`: navigation and video controls; no external runtime dependencies.
-- `media/hero-bitrix-16x9-v7.mp4`: 32-second main film for desktop, with music.
-- `media/hero-bitrix-9x16-v7.mp4`: separately composed portrait film for widths up to 640px.
+- `media/hero-bitrix-16x9-v9.mp4`: 32-second main film for desktop, with music.
+- `media/hero-bitrix-9x16-v9.mp4`: separately composed portrait film for widths up to 640px.
 - `media/hero-bitrix-ru-v4.vtt`: optional Russian descriptive captions.
 - `assets/licenses/`: licenses for Onest, retained Manrope, Lucide and music.
 
-Full films have five distinct lo-fi tracks with visible CC BY 4.0 credits:
+Full films use five different user-selected Mixkit tracks. Attribution is not
+required for their use in website videos:
 
-| Film | Current MP4 versions | Music |
-| --- | --- | --- |
-| Main | `hero-bitrix-{16x9,9x16}-v7.mp4` | Downtown Walk |
-| Documents | `knowledge-dynamic-{16x9,9x16}-v4.mp4` | Sleepwalk Television |
-| Kitchen consultant | `consultant-film-{landscape,portrait}-v6.mp4` | Rain, Book And Cup Of Tea |
-| Kitchen questionnaire | `questionnaire-film-{landscape,portrait}-v5.mp4` | Late-Night Decaf |
-| Voice administrator | `voice-film-{landscape,portrait}-v4.mp4` | Dusk Horizon |
+| Film | Current MP4 versions | Music | Excerpt |
+| --- | --- | --- | --- |
+| Main | `hero-bitrix-{16x9,9x16}-v9.mp4` | Hazy After Hours | 14-46s |
+| Documents | `knowledge-dynamic-{16x9,9x16}-v5.mp4` | Curiosity | 5-30s |
+| Kitchen consultant | `consultant-film-{landscape,portrait}-v7.mp4` | New York | 10-32s |
+| Kitchen questionnaire | `questionnaire-film-{landscape,portrait}-v6.mp4` | Green Chair RnB | 14-36s |
+| Voice administrator | `voice-film-{landscape,portrait}-v5.mp4` | R&B vibes 1 | 10-36s |
 
-All music is by FSM Team & | e s c p |. Excerpts, modifications and sources
-are listed in `assets/licenses/video-music-lofi-20261004.md`. The voice film
-uses music and effects. Four homepage teasers remain silent. Older published
-media and case pages are retained for existing links.
+Excerpts, sources and license details are listed in
+`assets/licenses/video-music-selected-20261005.md`. Music starts at video time
+zero, using the specified position in each track. Video streams, transitions
+and soft interface effects are retained; there is no additional beat-driven
+remontage. The voice film uses music and effects without the private voice track.
+Four homepage teasers remain silent. Older published media, their CC BY license
+records and case pages are retained for existing links and rollback.
 
 The hero plays silently by default, stops outside the viewport, and respects
 reduced-motion and data-saving preferences. It loops the complete film.
@@ -47,6 +51,8 @@ The former clinic film, poster and captions are retained for old links and rollb
 
 The October 4 release changed the main film. The October 5 release includes
 the new design, updated full demo soundtracks and the dynamic documents film.
+The later October 5 soundtrack update publishes the user's selection, including
+the main track starting at 14 seconds. The previous release is `80fd3b3`.
 Source projects, private voice editions and intermediate renders are kept in
 the local editing archive. `_config.yml` excludes development files from Pages.
 
