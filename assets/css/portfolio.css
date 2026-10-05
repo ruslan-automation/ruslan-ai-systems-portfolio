@@ -508,7 +508,7 @@ h1 {
   max-width: 650px;
 }
 .about-copy h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
   margin-bottom: 28px;
 }
@@ -673,7 +673,7 @@ h1 {
 }
 .portrait {
   justify-self: end;
-  width: min(100%, 320px);
+  width: min(100%, 288px);
 }
 .portrait img {
   width: 100%;
@@ -951,7 +951,7 @@ h1 {
     gap: 32px;
   }
   .about-copy h2 {
-    font-size: 34px;
+    font-size: 30px;
   }
   .about-copy > p {
     font-size: 17px;
@@ -1093,11 +1093,11 @@ h1 {
     gap: 32px;
   }
   .about-copy h2 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 22px;
   }
   .portrait {
-    width: 220px;
+    width: 200px;
     justify-self: start;
   }
   .about-links p {

@@ -2,6 +2,15 @@
 
 Live site: https://ruslanzaynullin.ru/
 
+## Intro Polish (October 5, 2026)
+
+The introduction and About use the shared page background, with no separate
+white band or divider. The About copy starts with workflow and integrations
+instead of repeating the sales/support introduction. Its heading and portrait
+are smaller; the common left axis and original section spacing are preserved.
+Videos, resume, experience and all other sections are unchanged.
+Previous production release: `78a6984`, saved in the local project archive.
+
 ## Experience Update (October 5, 2026)
 
 The approved experience section now has three anonymized, full-width project
